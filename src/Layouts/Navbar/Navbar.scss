@@ -1,0 +1,18 @@
+.nav {
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    .nav-item {
+      .nav-link {
+        .nav-link-text {
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          font-weight: var(--medium-weight);
+          font-family: inherit;
+          color: var(--dark-link-color);
+        }
+      }
+    }
+  }
+}

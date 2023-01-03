@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  background-color: var(--dark-layout-bg);
+  padding: 2em 0;
+  justify-content: center;
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    .header-title {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--dark-logo-bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-transform: uppercase;
+        color: var(--dark-link-color);
+        font-size: 24px;
+      }
+    }
+  }
+}
