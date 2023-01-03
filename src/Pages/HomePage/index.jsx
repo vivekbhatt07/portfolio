@@ -1,7 +1,7 @@
 import React from "react";
 import { PageContainer } from "../../Component";
 function HomePage() {
-  return <PageContainer></PageContainer>;
+  return <PageContainer>Hello there</PageContainer>;
 }
 
 export default HomePage;

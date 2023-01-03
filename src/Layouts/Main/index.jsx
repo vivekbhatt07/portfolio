@@ -1,8 +1,8 @@
 import React from "react";
 import "./Main.scss";
 
-function Main() {
-  return <div>Main</div>;
+function Main(props) {
+  return <main>{props.pageContent}</main>;
 }
 
 export default Main;

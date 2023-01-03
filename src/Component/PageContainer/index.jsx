@@ -6,7 +6,7 @@ function PageContainer(props) {
   return (
     <div>
       <Header />
-      <Main>{props.children}</Main>
+      <Main pageContent={props.children} />
       <Footer />
     </div>
   );
