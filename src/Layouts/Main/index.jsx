@@ -3,8 +3,10 @@ import "./Main.scss";
 import { LayoutContainer } from "../../Component";
 function Main(props) {
   return (
-    <main>
-      <LayoutContainer>{props.pageContent}</LayoutContainer>
+    <main className="main">
+      <LayoutContainer className="main-container">
+        {props.pageContent}
+      </LayoutContainer>
     </main>
   );
 }

@@ -1,0 +1,42 @@
+@forward "../../GlobalStyles/Variables";
+@forward "../../GlobalStyles/ResetStyle/";
+.hero-section {
+  width: 100%;
+  .hero-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    .hero-head {
+      text-transform: capitalize;
+      color: #fff;
+      font-family: var(--primary-font);
+      font-weight: var(--medium-weight);
+    }
+
+    .hero-description {
+      color: #fff;
+      font-family: var(--primary-font);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 3em;
+      align-items: center;
+      .contact-btn {
+        background-color: #6b21a8;
+        font-family: var(--primary-font);
+        text-transform: capitalize;
+        font-weight: var(--regular-weight);
+      }
+
+      .contact-btn:hover {
+        background-color: #581c87;
+      }
+
+      .hero-social {
+        display: flex;
+        gap: 1em;
+      }
+    }
+  }
+}

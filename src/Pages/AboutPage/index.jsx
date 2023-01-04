@@ -1,7 +1,9 @@
 import React from "react";
-// import "./_AboutPage.scss";
+import "./AboutPage.scss";
+import { PageContainer } from "../../Component";
+
 function AboutPage() {
-  return <div></div>;
+  return <PageContainer></PageContainer>;
 }
 
 export default AboutPage;
