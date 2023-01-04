@@ -2,29 +2,18 @@ import React from "react";
 import "./Header.scss";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
-import { LayoutContainer, ModeToggle, Switch } from "../../Component";
-import { Button } from "@mui/material";
+import { LayoutContainer } from "../../Component";
 
 function Header() {
   return (
-    <ModeToggle>
-      {function (mode, changeModeHandler) {
-        return (
-          <header
-            className="header"
-            style={{ backgroundColor: mode ? "#000" : "#fff" }}
-          >
-            <LayoutContainer className="header-container">
-              <h1 className="header-title">
-                <Link to="/">vb</Link>
-              </h1>
-              <Navbar />
-              <Switch />
-            </LayoutContainer>
-          </header>
-        );
-      }}
-    </ModeToggle>
+    <header className="header">
+      <LayoutContainer className="header-container">
+        <h1 className="header-title">
+          <Link to="/">vb</Link>
+        </h1>
+        <Navbar />
+      </LayoutContainer>
+    </header>
   );
 }
 
