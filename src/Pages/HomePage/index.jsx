@@ -2,7 +2,7 @@ import { Typography, Button } from "@mui/material";
 import React from "react";
 import { PageContainer } from "../../Component";
 import { Twitter, LinkedIn } from "@mui/icons-material";
-
+import HeroImg from "../../Assets/Images/hero-img.svg";
 import "./HomePage.scss";
 
 function HomePage() {
@@ -30,6 +30,9 @@ function HomePage() {
               </a>
             </div>
           </div>
+        </div>
+        <div className="hero-img">
+          <img src={HeroImg} alt="hero-img" />
         </div>
       </section>
     </PageContainer>

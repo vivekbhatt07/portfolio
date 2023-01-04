@@ -2,6 +2,11 @@
 @forward "../../GlobalStyles/ResetStyle/";
 .hero-section {
   width: 100%;
+  padding: 2em 0;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 300px;
+  gap: 2em;
   .hero-intro {
     display: flex;
     flex-direction: column;
@@ -37,6 +42,14 @@
         display: flex;
         gap: 1em;
       }
+    }
+  }
+
+  .hero-img {
+    display: flex;
+    img {
+      max-width: 100%;
+      object-fit: contain;
     }
   }
 }
