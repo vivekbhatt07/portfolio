@@ -3,7 +3,19 @@ import React from "react";
 import { PageContainer } from "../../Component";
 import { Twitter, LinkedIn } from "@mui/icons-material";
 import HeroImg from "../../Assets/Images/hero-img.svg";
+import JavascriptTool from "../../Assets/Images/javascript-tool.svg";
+import ReactTool from "../../Assets/Images/react-tool.svg";
+import CssTool from "../../Assets/Images/css-tool.svg";
+import HtmlTool from "../../Assets/Images/html-tool.svg";
 import "./HomePage.scss";
+
+function Tool(props) {
+  return (
+    <div className="tools-item">
+      <img src={props.img} alt="tools" />
+    </div>
+  );
+}
 
 function HomePage() {
   return (
@@ -33,6 +45,17 @@ function HomePage() {
         </div>
         <div className="hero-img">
           <img src={HeroImg} alt="hero-img" />
+        </div>
+      </section>
+      <section className="tools-section">
+        <Typography className="tools-head" variant="h3">
+          Tools
+        </Typography>
+        <div className="tools-body">
+          <Tool img={HtmlTool} />
+          <Tool img={CssTool} />
+          <Tool img={JavascriptTool} />
+          <Tool img={ReactTool} />
         </div>
       </section>
     </PageContainer>

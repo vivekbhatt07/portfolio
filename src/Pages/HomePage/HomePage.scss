@@ -53,3 +53,27 @@
     }
   }
 }
+
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  padding: 6em 0;
+  .tools-head {
+    color: #fff;
+    text-align: center;
+    font-family: var(--primary-font);
+  }
+
+  .tools-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2em;
+    .tools-item {
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
