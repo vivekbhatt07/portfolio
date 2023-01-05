@@ -1,7 +1,7 @@
 import { Typography, Button } from "@mui/material";
 import React from "react";
 import { PageContainer } from "../../Component";
-import { Twitter, LinkedIn } from "@mui/icons-material";
+import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 import HeroImg from "../../Assets/Images/hero-img.svg";
 import JavascriptTool from "../../Assets/Images/javascript-tool.svg";
 import ReactTool from "../../Assets/Images/react-tool.svg";
@@ -39,6 +39,9 @@ function HomePage() {
               </a>
               <a href="https://www.linkedin.com/in/vivekbhatt07/">
                 <LinkedIn />
+              </a>
+              <a href="https://github.com/vivekbhatt07">
+                <GitHub />
               </a>
             </div>
           </div>
