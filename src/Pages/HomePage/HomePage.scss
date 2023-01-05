@@ -2,15 +2,14 @@
 @forward "../../GlobalStyles/ResetStyle/";
 .hero-section {
   width: 100%;
-  padding: 2em 0;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 300px;
-  gap: 2em;
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3em;
   .hero-intro {
     display: flex;
     flex-direction: column;
-    gap: 2.5em;
+    gap: 1.5em;
     .hero-head {
       text-transform: capitalize;
       color: #fff;
@@ -57,8 +56,8 @@
 .tools-section {
   display: flex;
   flex-direction: column;
-  gap: 4em;
-  padding: 6em 0;
+  gap: 2em;
+  padding: 2em 0;
   .tools-head {
     color: #fff;
     text-align: center;
@@ -75,5 +74,30 @@
         object-fit: contain;
       }
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-section {
+    padding: 2em 0;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 300px;
+    gap: 2em;
+    .hero-intro {
+      gap: 2.5em;
+      .hero-actions {
+        gap: 3em;
+        align-items: center;
+        .hero-social {
+          gap: 1em;
+        }
+      }
+    }
+  }
+
+  .tools-section {
+    gap: 4em;
+    padding: 6em 0;
   }
 }
