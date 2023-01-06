@@ -1,3 +1,94 @@
-body {
-  color: red;
+.social-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  .social-head {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+  }
+
+  .social-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    .social-card {
+      .social-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
+        .social-card-img {
+          img {
+            max-width: 100%;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+
+        .social-card-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .social-card-title {
+            text-transform: capitalize;
+            color: #fff;
+            font-family: var(--primary-font);
+          }
+          .social-card-subtitle {
+            color: #fff;
+            font-family: var(--primary-font);
+          }
+          .social-card-link {
+            display: flex;
+            .social-card-btn {
+              width: 100%;
+              text-transform: capitalize;
+              background-color: #6b21a8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .social-section {
+    width: 100%;
+    .social-head {
+      text-transform: capitalize;
+    }
+
+    .social-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2em;
+      .social-card {
+        .social-card-container {
+          display: flex;
+          position: relative;
+          .social-card-img {
+            img {
+              max-width: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .social-card-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            .social-card-title {
+              text-transform: capitalize;
+            }
+            .social-card-subtitle {
+            }
+          }
+        }
+      }
+    }
+  }
 }
