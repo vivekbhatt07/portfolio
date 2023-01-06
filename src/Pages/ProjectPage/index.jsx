@@ -5,6 +5,7 @@ import "./ProjectPage.scss";
 import FrontEndMentor from "../../Assets/Images/front-end-mentor.svg";
 import Neog from "../../Assets/Images/neog.svg";
 import ExtraProjects from "../../Assets/Images/extra-projects.svg";
+import { Link } from "react-router-dom";
 
 function ProjectPage() {
   const projectGroupList = [
@@ -15,6 +16,7 @@ function ProjectPage() {
         "Front End Mentor is platform that provides access to various designed templates. Using these templates, anyone with the knowlege of HTML, CSS and Javascript can replicate the design.",
       bgColor: "#A9C9FF",
       img: FrontEndMentor,
+      toLocation: "/Projects/FrontEndMentor",
     },
     {
       id: "2",
@@ -23,6 +25,7 @@ function ProjectPage() {
         "Front End Mentor is platform that provides access to various designed templates. Using these templates, anyone with the knowlege of HTML, CSS and Javascript can replicate the design.",
       bgColor: "#74ebd5",
       img: Neog,
+      toLocation: "/Projects/NeogCamp",
     },
     {
       id: "3",
@@ -31,6 +34,7 @@ function ProjectPage() {
         "Front End Mentor is platform that provides access to various designed templates. Using these templates, anyone with the knowlege of HTML, CSS and Javascript can replicate the design.",
       bgColor: "#FAACA8",
       img: ExtraProjects,
+      toLocation: "/Projects/Extra",
     },
   ];
   return (
@@ -57,9 +61,11 @@ function ProjectPage() {
                     <Typography className="project-group-body" variant="body2">
                       {projectGroup.groupBody}
                     </Typography>
-                    <Button className="project-group-btn" variant="contained">
-                      Open
-                    </Button>
+                    <Link to={projectGroup.toLocation}>
+                      <Button className="project-group-btn" variant="contained">
+                        Open
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
