@@ -23,7 +23,8 @@ function HomePage() {
       <section className="hero-section">
         <div className="hero-intro">
           <Typography className="hero-head" variant="h2">
-            Hi, I Am <br></br>Vivek Bhatt
+            Hi, I Am <br></br>
+            <span>Vivek Bhatt</span>
           </Typography>
           <Typography className="hero-description" variant="body1">
             I am a web developer. <br></br>Currenly, learning technologies like
