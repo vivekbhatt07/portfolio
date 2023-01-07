@@ -56,7 +56,7 @@ function AboutPage() {
                     </Typography>
                     <Typography
                       className="social-card-subtitle"
-                      variant="body2"
+                      variant="caption"
                     >
                       {socialCard.textContent}
                     </Typography>

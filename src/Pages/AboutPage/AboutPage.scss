@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 3em 0;
   gap: 2em;
   .social-head {
     text-transform: capitalize;
@@ -63,28 +64,20 @@
     .social-body {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 2em;
+      gap: 4em;
       .social-card {
         .social-card-container {
-          display: flex;
-          position: relative;
+          grid-template-columns: 0.7fr 1fr;
+          gap: 0.5em;
           .social-card-img {
             img {
               max-width: 100%;
               object-fit: cover;
             }
           }
-
           .social-card-content {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
             .social-card-title {
               text-transform: capitalize;
-            }
-            .social-card-subtitle {
             }
           }
         }
