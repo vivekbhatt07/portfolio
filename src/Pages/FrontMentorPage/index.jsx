@@ -3,7 +3,11 @@ import React from "react";
 import { PageContainer } from "../../Component";
 import "./FrontMentor.scss";
 import AdviceApp from "../../Assets/Images/advice-app.svg";
-
+import ArticlePreviewApp from "../../Assets/Images/article-preview-app.svg";
+import ProductPreviewCardApp from "../../Assets/Images/product-preview-card-app.svg";
+import TestimonialGridApp from "../../Assets/Images/testimonial-grid-app.svg";
+import OrderSummaryApp from "../../Assets/Images/order-summary-app.svg";
+import ThreeColumnApp from "../../Assets/Images/three-column-app.svg";
 function FrontMentorPage() {
   const frontEndMentorList = [
     {
@@ -12,7 +16,7 @@ function FrontMentorPage() {
       subtitle:
         "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: AdviceApp,
+      img: ProductPreviewCardApp,
       liveLink: "https://brand-card-preview.netlify.app/",
       codeLink:
         "https://github.com/vivekbhatt07/Product-Preview-Card-Component",
@@ -23,7 +27,7 @@ function FrontMentorPage() {
       subtitle:
         "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
-      img: AdviceApp,
+      img: ArticlePreviewApp,
       liveLink: "https://article-cards-component.netlify.app/",
       codeLink: "https://github.com/vivekbhatt07/Article-Preview-Component",
     },
@@ -33,7 +37,7 @@ function FrontMentorPage() {
       subtitle:
         "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: AdviceApp,
+      img: TestimonialGridApp,
       liveLink: "https://grids-testimonial.netlify.app/",
       codeLink: "https://github.com/vivekbhatt07/Testimonial-Grid-Section",
     },
@@ -43,7 +47,7 @@ function FrontMentorPage() {
       subtitle:
         "A perfect project for newbies who are starting to build confidence with layouts!",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: AdviceApp,
+      img: OrderSummaryApp,
       liveLink: "https://orders-component.netlify.app/",
       codeLink: "https://github.com/vivekbhatt07/Order-Summary-Component",
     },
@@ -53,7 +57,7 @@ function FrontMentorPage() {
       subtitle:
         "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: AdviceApp,
+      img: ThreeColumnApp,
       liveLink: "https://tri-column-cards.netlify.app/",
       codeLink: "https://github.com/vivekbhatt07/FE-Mentor-Challenge-1",
     },
