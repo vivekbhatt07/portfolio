@@ -8,44 +8,56 @@ function FrontMentorPage() {
   const frontEndMentorList = [
     {
       id: "1",
-      title: "advice generator",
+      title: "Product preview card component",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
+        "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects",
+      technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: AdviceApp,
+      liveLink: "https://brand-card-preview.netlify.app/",
+      codeLink:
+        "https://github.com/vivekbhatt07/Product-Preview-Card-Component",
     },
     {
       id: "2",
-      title: "advice generator",
+      title: "Article preview component",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+        "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: AdviceApp,
+      liveLink: "https://article-cards-component.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Article-Preview-Component",
     },
     {
       id: "3",
-      title: "advice generator",
+      title: "Testimonials grid section",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
+        "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+      technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: AdviceApp,
+      liveLink: "https://grids-testimonial.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Testimonial-Grid-Section",
     },
     {
       id: "4",
-      title: "advice generator",
+      title: "Order summary component",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
+        "A perfect project for newbies who are starting to build confidence with layouts!",
+      technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: AdviceApp,
+      liveLink: "https://orders-component.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Order-Summary-Component",
     },
     {
       id: "5",
-      title: "advice generator",
+      title: "3-column preview card component",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
+        "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+      technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: AdviceApp,
+      liveLink: "https://tri-column-cards.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/FE-Mentor-Challenge-1",
     },
+
     {
       id: "6",
       title: "advice generator",
@@ -53,22 +65,8 @@ function FrontMentorPage() {
         "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: AdviceApp,
-    },
-    {
-      id: "7",
-      title: "advice generator",
-      subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
-      img: AdviceApp,
-    },
-    {
-      id: "8",
-      title: "advice generator",
-      subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
-      img: AdviceApp,
+      liveLink: "https://life-advice.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
     },
   ];
   return (
@@ -103,10 +101,10 @@ function FrontMentorPage() {
                       <Chip label="JS" color="success" variant="outlined" />
                     </div>
                     <div className="project-card-actions">
-                      <a href="https://life-advice.netlify.app/">
+                      <a href={frontEndMentorItem.liveLink}>
                         <Button variant="contained">live link</Button>
                       </a>
-                      <a href="https://github.com/vivekbhatt07/Advice-Generator">
+                      <a href={frontEndMentorItem.codeLink}>
                         <Button variant="contained">code link</Button>
                       </a>
                     </div>
