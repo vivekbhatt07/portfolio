@@ -9,9 +9,10 @@
     text-align: center;
   }
   .frontend-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
     .project-card {
-      max-width: 450px;
-
       .project-card-wrap {
         position: relative;
         overflow: hidden;
