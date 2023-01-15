@@ -28,6 +28,13 @@ function Navbar() {
             </Typography>
           </Link>
         </li>
+        <li className="nav-item">
+          <Link to="/Projects" className="nav-link">
+            <Typography variant="button" className="nav-link-text">
+              blogs
+            </Typography>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

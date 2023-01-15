@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--dark-layout-bg);
+  display: flex;
+  justify-content: center;
+  .footer-container {
+    .footer-nav {
+      display: flex;
+      .footer-nav-list {
+        list-style: none;
+        .footer-nav-item {
+          .footer-nav-link {
+            .nav-link-text {
+              font-family: var(--primary-font);
+              text-transform: capitalize;
+              color: #fff;
+              font-weight: var(--regular-weight);
+            }
+          }
+        }
+      }
+    }
+  }
+}
