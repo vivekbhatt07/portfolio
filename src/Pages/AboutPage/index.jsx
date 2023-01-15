@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutPage.scss";
 import { PageContainer } from "../../Component";
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, Chip } from "@mui/material";
 import GitCardLogo from "../../Assets/Images/git-card-logo.svg";
 import LinkedinCardLogo from "../../Assets/Images/linked-card-logo.svg";
 import TwitterCardLogo from "../../Assets/Images/twitter-card-logo.svg";
@@ -90,6 +90,53 @@ function AboutPage() {
             </ul>
 
             <Button className="about-me-btn">my story</Button>
+          </article>
+          <article className="about-me">
+            <Typography className="about-me-head" variant="h5">
+              Technologies
+            </Typography>
+            <ul className="about-me-chips">
+              <li className="about-me-chip">
+                <Chip
+                  label="HTML"
+                  className="chip"
+                  sx={{ backgroundColor: "#FF4E00" }}
+                />
+              </li>
+              <li className="about-me-chip">
+                <Chip
+                  label="CSS"
+                  className="chip"
+                  sx={{ backgroundColor: "#04619F" }}
+                />
+              </li>
+              <li className="about-me-chip">
+                <Chip
+                  label="JAVASCRIPT"
+                  color="secondary"
+                  className="chip"
+                  sx={{ backgroundColor: "#F5D020" }}
+                />
+              </li>
+              <li className="about-me-chip">
+                <Chip
+                  label="REACT"
+                  color="success"
+                  className="chip"
+                  sx={{ backgroundColor: "#009FFD" }}
+                />
+              </li>
+              <li className="about-me-chip">
+                <Chip
+                  label="WEBFLOW"
+                  color="success"
+                  className="chip"
+                  sx={{ backgroundColor: "#28313B" }}
+                />
+              </li>
+            </ul>
+
+            <Button className="about-me-btn">View Projects</Button>
           </article>
         </div>
       </section>
