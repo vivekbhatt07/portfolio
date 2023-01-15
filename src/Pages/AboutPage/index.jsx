@@ -38,7 +38,62 @@ function AboutPage() {
 
   return (
     <PageContainer>
-      <section class="social-section">
+      <section className="about-section">
+        <Typography className="about-head" variant="h2">
+          about me
+        </Typography>
+        <div className="about-body">
+          <article className="about-me">
+            <Typography className="about-me-head" variant="h3">
+              Hi! I'm Vivek
+            </Typography>
+            <ul className="about-me-list">
+              <li className="about-me-item">
+                <Typography
+                  className="about-me-description"
+                  variant="subtitle1"
+                >
+                  ⭐ I'm a front-end developer from non-CS background.
+                </Typography>
+              </li>
+              <li className="about-me-item">
+                <Typography
+                  className="about-me-description"
+                  variant="subtitle1"
+                >
+                  ⭐ I have completed my graduation in B.Com in 2021.
+                </Typography>
+              </li>
+              <li className="about-me-item">
+                <Typography
+                  className="about-me-description"
+                  variant="subtitle1"
+                >
+                  ⭐ Discord moderator at Neog.
+                </Typography>
+              </li>
+              <li className="about-me-item">
+                <Typography
+                  className="about-me-description"
+                  variant="subtitle1"
+                >
+                  ⭐ My first project on webflow{" "}
+                  <a
+                    href="https://www.tealbox.digital/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    tealbox.digital
+                  </a>
+                </Typography>
+              </li>
+            </ul>
+
+            <Button className="about-me-btn">my story</Button>
+          </article>
+        </div>
+      </section>
+      <section className="social-section">
         <Typography className="social-head" variant="h2">
           follow me
         </Typography>
