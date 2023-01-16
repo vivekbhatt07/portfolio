@@ -115,7 +115,7 @@ function AboutPage() {
                   label="JAVASCRIPT"
                   color="secondary"
                   className="chip"
-                  sx={{ backgroundColor: "#F5D020" }}
+                  sx={{ backgroundColor: "#FBB034" }}
                 />
               </li>
               <li className="about-me-chip">

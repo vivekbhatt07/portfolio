@@ -29,7 +29,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/Projects" className="nav-link">
+          <Link to="/Blogs" className="nav-link">
             <Typography variant="button" className="nav-link-text">
               blogs
             </Typography>
