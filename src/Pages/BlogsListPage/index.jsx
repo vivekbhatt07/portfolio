@@ -9,7 +9,7 @@ function BlogsListPage() {
     <PageContainer>
       <section className="blogsList-section">
         <Typography variant="h2" className="blogsList-head">
-          Blogs Category
+          {/* Blogs Category */}
         </Typography>
         <div className="blogsList-body">
           <article className="blogsList-card">
