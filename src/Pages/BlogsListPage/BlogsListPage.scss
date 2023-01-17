@@ -3,10 +3,12 @@
   flex-direction: column;
   gap: 3em;
   padding: 4em 0;
+  width: 100%;
   .blogsList-head {
     text-transform: capitalize;
     font-family: var(--primary-font);
     color: #fff;
+    text-align: center;
   }
   .blogsList-body {
     display: flex;
@@ -65,6 +67,20 @@
     }
     .blogsList-card:hover .blogList-card-body {
       transform: translateX(0%);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .blogsList-section {
+    .blogsList-head {
+    }
+    .blogsList-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      .blogsList-card {
+        max-width: unset;
+      }
     }
   }
 }
