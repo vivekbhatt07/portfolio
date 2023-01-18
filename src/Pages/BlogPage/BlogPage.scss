@@ -1,0 +1,36 @@
+.blog-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  padding: 2em 0;
+  .blog-head {
+    color: #fff;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .blog-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .blog-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4em;
+      .blog-subhead {
+        font-family: var(--primary-font);
+        color: #fff;
+        text-transform: capitalize;
+      }
+      .blog-para {
+        font-family: var(--primary-font);
+        color: #fff;
+      }
+    }
+    .blog-para {
+      font-family: var(--primary-font);
+      color: #fff;
+    }
+  }
+}
