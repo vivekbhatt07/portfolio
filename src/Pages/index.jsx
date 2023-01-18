@@ -1,4 +1,5 @@
 import AboutPage from "./AboutPage";
+import BlogPage from "./BlogPage";
 import BlogsListPage from "./BlogsListPage";
 import ExtraPage from "./ExtraPage";
 import FrontMentorPage from "./FrontMentorPage";
@@ -8,6 +9,7 @@ import ProjectPage from "./ProjectPage";
 
 export {
   AboutPage,
+  BlogPage,
   BlogsListPage,
   ExtraPage,
   FrontMentorPage,

@@ -1,6 +1,7 @@
 import "./App.scss";
 import {
   AboutPage,
+  BlogPage,
   BlogsListPage,
   HomePage,
   ProjectPage,
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Projects/NeogCamp" element={<NeogCampPage />} />
         <Route path="/Projects/Extra" element={<ExtraPage />} />
         <Route path="/Blogs" element={<BlogsListPage />} />
+        <Route path="/Blogs/Blog" element={<BlogPage />} />
       </Routes>
     </div>
   );
