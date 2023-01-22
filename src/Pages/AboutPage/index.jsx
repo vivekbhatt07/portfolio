@@ -78,13 +78,7 @@ function AboutPage() {
                   variant="subtitle1"
                 >
                   ⭐ My first project on webflow{" "}
-                  <a
-                    href="https://www.tealbox.digital/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    tealbox.digital
-                  </a>
+                  <a href="https://www.tealbox.digital/">tealbox.digital</a>
                 </Typography>
               </li>
             </ul>

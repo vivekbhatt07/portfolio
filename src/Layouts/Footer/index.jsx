@@ -13,36 +13,6 @@ function Footer() {
           <ul className="footer-nav-list">
             <li className="footer-nav-item">
               <Link to="/" className="footer-nav-link">
-                <Typography variant="button" className="nav-link-text">
-                  home
-                </Typography>
-              </Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/About" className="footer-nav-link">
-                <Typography variant="button" className="nav-link-text">
-                  about
-                </Typography>
-              </Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/Projects" className="footer-nav-link">
-                <Typography variant="button" className="nav-link-text">
-                  projects
-                </Typography>
-              </Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/Projects" className="footer-nav-link">
-                <Typography variant="button" className="nav-link-text">
-                  blogs
-                </Typography>
-              </Link>
-            </li>
-          </ul>
-          <ul className="footer-nav-list">
-            <li className="footer-nav-item">
-              <Link to="/" className="footer-nav-link">
                 <Twitter />
               </Link>
             </li>

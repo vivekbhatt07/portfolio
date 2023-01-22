@@ -6,7 +6,10 @@
   .footer-container {
     .footer-nav {
       display: flex;
+      justify-content: center;
       .footer-nav-list {
+        display: flex;
+        gap: 16px;
         list-style: none;
         .footer-nav-item {
           .footer-nav-link {
