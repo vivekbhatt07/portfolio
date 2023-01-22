@@ -2,24 +2,25 @@
 @forward "../../GlobalStyles/ResetStyle/";
 .hero-section {
   width: 100%;
-  padding: 4em 0;
+  padding: 4em 0 0 0;
   display: flex;
   flex-direction: column-reverse;
   gap: 3em;
   .hero-intro {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
     .hero-head {
       text-transform: capitalize;
       color: #fff;
       font-family: var(--primary-font);
       font-weight: var(--medium-weight);
+      margin-bottom: 16px;
     }
 
     .hero-description {
       color: #fff;
       font-family: var(--primary-font);
+      margin-bottom: 32px;
     }
 
     .hero-actions {
@@ -57,7 +58,7 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  padding: 2em 0;
+  padding: 4em 0 0 0;
   .tools-head {
     color: #fff;
     text-align: center;
@@ -67,10 +68,11 @@
   .tools-body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 2em;
+    column-gap: 5em;
     .tools-item {
       img {
         max-width: 100%;
+        height: 100%;
         object-fit: contain;
       }
     }
@@ -79,13 +81,11 @@
 
 @media (min-width: 1280px) {
   .hero-section {
-    padding: 2em 0;
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 300px;
     gap: 2em;
     .hero-intro {
-      gap: 2.5em;
       .hero-actions {
         gap: 3em;
         align-items: center;
