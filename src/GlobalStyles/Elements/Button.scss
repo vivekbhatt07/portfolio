@@ -1,4 +1,12 @@
 button {
   cursor: pointer;
   text-transform: capitalize;
+  background-color: #6b21a8;
+  font-family: var(--primary-font);
+  font-weight: var(--regular-weight);
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: #581c87;
 }

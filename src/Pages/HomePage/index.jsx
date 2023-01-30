@@ -2,11 +2,15 @@ import { Typography, Button } from "@mui/material";
 import React from "react";
 import { PageContainer } from "../../Component";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
-import HeroImg from "../../Assets/Images/hero-img.svg";
-import JavascriptTool from "../../Assets/Images/javascript-tool.svg";
-import ReactTool from "../../Assets/Images/react-tool.svg";
-import CssTool from "../../Assets/Images/css-tool.svg";
-import HtmlTool from "../../Assets/Images/html-tool.svg";
+import {
+  HeroImg,
+  HtmlLogo,
+  CssLogo,
+  JavascriptLogo,
+  ReactLogo,
+  FigmaLogo,
+  WebflowLogo,
+} from "../../Assets/Images/HomePage";
 import "./HomePage.scss";
 
 function Tool(props) {
@@ -56,10 +60,12 @@ function HomePage() {
           Tools
         </Typography>
         <div className="tools-body">
-          <Tool img={HtmlTool} />
-          <Tool img={CssTool} />
-          <Tool img={JavascriptTool} />
-          <Tool img={ReactTool} />
+          <Tool img={HtmlLogo} />
+          <Tool img={CssLogo} />
+          <Tool img={JavascriptLogo} />
+          <Tool img={ReactLogo} />
+          <Tool img={FigmaLogo} />
+          <Tool img={WebflowLogo} />
         </div>
       </section>
     </PageContainer>
