@@ -6,9 +6,8 @@
   box-shadow: rgba(255, 255, 255, 1) 0px 2px 8px 0px;
   .header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 2em;
     .header-title {
       margin-right: 16px;
       width: 50px;

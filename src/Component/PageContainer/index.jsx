@@ -4,7 +4,7 @@ import { Header, Main, Footer } from "../../Layouts";
 
 function PageContainer(props) {
   return (
-    <div>
+    <div className="page-container">
       <Header />
       <Main pageContent={props.children} />
       <Footer />

@@ -1,9 +1,9 @@
 .nav {
   width: 100%;
+  display: none;
   .nav-list {
     display: flex;
     list-style: none;
-    // gap: 4em;
     justify-content: space-between;
     .nav-item {
       .nav-link {
@@ -39,6 +39,7 @@
 
 @media (min-width: 1280px) {
   .nav {
+    display: flex;
     width: auto;
     .nav-list {
       gap: 4em;
