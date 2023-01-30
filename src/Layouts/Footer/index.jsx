@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import { LayoutContainer } from "../../Component";
-import Typography from "@mui/material/Typography";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 
 function Footer() {
