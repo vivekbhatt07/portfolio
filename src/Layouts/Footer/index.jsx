@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.scss";
-import { Link } from "react-router-dom";
 import { LayoutContainer } from "../../Component";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 
@@ -11,19 +10,28 @@ function Footer() {
         <nav className="footer-nav">
           <ul className="footer-nav-list">
             <li className="footer-nav-item">
-              <Link to="/" className="footer-nav-link">
+              <a
+                href="https://twitter.com/vivekbhatt07"
+                className="footer-nav-link"
+              >
                 <Twitter />
-              </Link>
+              </a>
             </li>
             <li className="footer-nav-item">
-              <Link to="/About" className="footer-nav-link">
+              <a
+                href="https://www.linkedin.com/in/vivekbhatt07/"
+                className="footer-nav-link"
+              >
                 <LinkedIn />
-              </Link>
+              </a>
             </li>
             <li className="footer-nav-item">
-              <Link to="/Projects" className="footer-nav-link">
+              <a
+                href="https://github.com/vivekbhatt07"
+                className="footer-nav-link"
+              >
                 <GitHub />
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
