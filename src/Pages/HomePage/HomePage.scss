@@ -2,7 +2,6 @@
 @forward "../../GlobalStyles/ResetStyle/";
 .hero-section {
   width: 100%;
-  padding: 4em 0 0 0;
   display: flex;
   flex-direction: column-reverse;
   gap: 3em;
@@ -59,7 +58,6 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  padding: 4em 0 0 0;
   .tools-head {
     color: #fff;
     text-align: center;
@@ -68,9 +66,8 @@
 
   .tools-body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 130px));
-    column-gap: 2em;
-    row-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 90px));
+    gap: 1em;
     justify-content: space-between;
     .tools-item {
       img {
@@ -79,6 +76,15 @@
         object-fit: contain;
       }
     }
+  }
+}
+
+@media (min-width: 780px) {
+  .hero-section {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 300px;
+    gap: 2em;
   }
 }
 
@@ -101,6 +107,12 @@
 
   .tools-section {
     gap: 4em;
-    padding: 6em 0;
+    .tools-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 130px));
+      column-gap: 2em;
+      row-gap: 1em;
+      justify-content: space-between;
+    }
   }
 }
