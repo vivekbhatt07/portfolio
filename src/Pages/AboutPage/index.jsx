@@ -107,7 +107,6 @@ function AboutPage() {
               <li className="about-me-chip">
                 <Chip
                   label="JAVASCRIPT"
-                  color="secondary"
                   className="chip"
                   sx={{ backgroundColor: "#FBB034" }}
                 />
@@ -115,7 +114,6 @@ function AboutPage() {
               <li className="about-me-chip">
                 <Chip
                   label="REACT"
-                  color="success"
                   className="chip"
                   sx={{ backgroundColor: "#009FFD" }}
                 />
@@ -123,9 +121,15 @@ function AboutPage() {
               <li className="about-me-chip">
                 <Chip
                   label="WEBFLOW"
-                  color="success"
                   className="chip"
                   sx={{ backgroundColor: "#28313B" }}
+                />
+              </li>
+              <li className="about-me-chip">
+                <Chip
+                  label="FIGMA"
+                  className="chip"
+                  sx={{ backgroundColor: "#f2709c" }}
                 />
               </li>
             </ul>

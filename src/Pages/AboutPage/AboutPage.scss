@@ -104,8 +104,10 @@
       }
 
       .about-me-chips {
+        width: 100%;
         list-style: none;
         display: flex;
+        flex-flow: row wrap;
         gap: 16px;
         .about-me-chip {
           .chip {

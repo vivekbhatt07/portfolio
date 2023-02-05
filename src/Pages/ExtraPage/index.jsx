@@ -1,11 +1,14 @@
 import React from "react";
 import { PageContainer } from "../../Component";
-import AdviceApp from "../../Assets/Images/advice-app.svg";
-import ArticlePreviewApp from "../../Assets/Images/article-preview-app.svg";
+
 import BananaTranslatorApp from "../../Assets/Images/banana-translator-app.svg";
-import TestimonialGridApp from "../../Assets/Images/testimonial-grid-app.svg";
-import OrderSummaryApp from "../../Assets/Images/order-summary-app.svg";
-import ThreeColumnApp from "../../Assets/Images/three-column-app.svg";
+import {
+  AdviceApp,
+  ArticlePreviewApp,
+  OrderSummaryApp,
+  TestimonialGridApp,
+  ThreeColumnApp,
+} from "../../Assets/Images/FrontEndMentor";
 import { Typography, Button, Chip } from "@mui/material";
 
 function ExtraPage() {
