@@ -1,7 +1,7 @@
 import React from "react";
 import { PageContainer } from "../../Component";
 
-import BananaTranslatorApp from "../../Assets/Images/banana-translator-app.svg";
+import BananaTranslatorApp from "../../Assets/Images/Neog/BananaTranslatorApp.svg";
 import {
   AdviceApp,
   ArticlePreviewApp,

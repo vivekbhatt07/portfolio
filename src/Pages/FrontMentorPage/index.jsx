@@ -158,9 +158,30 @@ function FrontMentorPage() {
                       {frontEndMentorItem.subtitle}
                     </Typography>
                     <div className="project-card-tech">
-                      <Chip label="HTML" color="success" variant="outlined" />
-                      <Chip label="CSS" color="success" variant="outlined" />
-                      <Chip label="JS" color="success" variant="outlined" />
+                      {frontEndMentorItem.technology.primary === "HTML" && (
+                        <Chip
+                          label={frontEndMentorItem.technology.primary}
+                          color="success"
+                          variant="outlined"
+                        />
+                      )}
+
+                      {frontEndMentorItem.technology.secondary === "CSS" && (
+                        <Chip
+                          label={frontEndMentorItem.technology.secondary}
+                          color="success"
+                          variant="outlined"
+                        />
+                      )}
+
+                      {frontEndMentorItem.technology.tertiary ===
+                        "Javascript" && (
+                        <Chip
+                          label={frontEndMentorItem.technology.tertiary}
+                          color="success"
+                          variant="outlined"
+                        />
+                      )}
                     </div>
                     <div className="project-card-actions">
                       <a href={frontEndMentorItem.liveLink}>
