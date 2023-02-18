@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutPage.scss";
-import { PageContainer } from "../../Component";
+import { PageContainer, GlossyCard } from "../../Component";
 import { Button, Typography, Chip } from "@mui/material";
 import GitCardLogo from "../../Assets/Images/git-card-logo.svg";
 import LinkedinCardLogo from "../../Assets/Images/linked-card-logo.svg";
@@ -43,7 +43,7 @@ function AboutPage() {
           about me
         </Typography>
         <div className="about-body">
-          <article className="about-me">
+          <GlossyCard className="about-me">
             <Typography className="about-me-head" variant="h3">
               Hi! I'm Vivek
             </Typography>
@@ -84,8 +84,8 @@ function AboutPage() {
             </ul>
 
             <Button className="about-me-btn">my story</Button>
-          </article>
-          <article className="about-me">
+          </GlossyCard>
+          <GlossyCard className="about-me">
             <Typography className="about-me-head" variant="h5">
               Technologies
             </Typography>
@@ -135,7 +135,7 @@ function AboutPage() {
             </ul>
 
             <Button className="about-me-btn">View Projects</Button>
-          </article>
+          </GlossyCard>
         </div>
       </section>
       <section className="social-section">
