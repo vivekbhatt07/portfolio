@@ -14,54 +14,27 @@
     grid-template-columns: 1fr;
     gap: 2em;
     .project-group {
-      background-color: #fff;
-      padding: 3px;
-      border-radius: 10px;
-      .project-group-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        border-radius: 10px;
-        padding: 8px;
-        .project-group-img {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          background-color: #000;
-          border-radius: 10px;
-          img {
-            object-fit: cover;
-            height: 165px;
-          }
-        }
+      .project-group-head {
+        font-family: var(--primary-font);
+        text-transform: capitalize;
+        color: #000;
+        text-align: center;
+        font-weight: 800;
+      }
 
-        .project-group-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1em;
-          .project-group-head {
-            font-family: var(--primary-font);
-            text-transform: capitalize;
-            color: #000;
-            text-align: center;
-            font-weight: 800;
-          }
+      .project-group-body {
+        font-family: var(--primary-font);
+        color: #000;
+        text-align: center;
+        opacity: 0.9;
+        text-align: left;
+      }
 
-          .project-group-body {
-            font-family: var(--primary-font);
-            color: #000;
-            text-align: center;
-            opacity: 0.9;
-          }
-
-          .project-group-btn {
-            text-transform: capitalize;
-            background-color: #fff;
-            font-family: var(--primary-font);
-            color: #8b5cf6;
-          }
-        }
+      .project-group-btn {
+        text-transform: capitalize;
+        background-color: #8b5cf6;
+        font-family: var(--primary-font);
+        color: #fff;
       }
     }
   }
@@ -74,11 +47,6 @@
     .project-body {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2em;
-      .project-group {
-        .project-group-container {
-          gap: 1em;
-        }
-      }
     }
   }
 }

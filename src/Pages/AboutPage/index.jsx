@@ -138,7 +138,7 @@ function AboutPage() {
           </GlossyCard>
         </div>
       </section>
-      <section className="social-section">
+      {/* <section className="social-section">
         <Typography className="social-head" variant="h2">
           follow me
         </Typography>
@@ -171,7 +171,7 @@ function AboutPage() {
             );
           })}
         </div>
-      </section>
+      </section> */}
     </PageContainer>
   );
 }

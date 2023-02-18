@@ -1,10 +1,10 @@
 import React from "react";
-import "./GlossyCard.scss";
-
-function GlossyCard(props) {
+import "./GroupCard.scss";
+function GroupCard(props) {
   const { children, className } = props;
-  const classes = "glossy-card " + className;
+  const classes = "group-card " + className;
+
   return <article className={classes}>{children}</article>;
 }
 
-export default GlossyCard;
+export default GroupCard;

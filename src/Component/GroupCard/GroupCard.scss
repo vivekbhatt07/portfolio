@@ -1,0 +1,17 @@
+.group-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 0.8em;
+  background: #fff;
+  border-top-right-radius: 25px;
+  transition-property: border;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  border: 5px solid #fff;
+}
+
+.group-card:hover {
+  border: 5px solid #8b5cf6;
+}
