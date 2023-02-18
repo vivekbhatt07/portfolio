@@ -1,6 +1,6 @@
-import { Typography, Button, Chip } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
-import { PageContainer } from "../../Component";
+import { PageContainer, ProjectCard } from "../../Component";
 import "./FrontMentor.scss";
 import {
   AdviceApp,
@@ -140,60 +140,10 @@ function FrontMentorPage() {
         <div className="frontend-body">
           {frontEndMentorList.map((frontEndMentorItem) => {
             return (
-              <div className="project-card" key={frontEndMentorItem.id}>
-                <div className="project-card-wrap">
-                  <img
-                    src={frontEndMentorItem.img}
-                    alt="advice app"
-                    className="project-card-img"
-                  />
-                  <div className="project-card-content">
-                    <Typography variant="h6" className="project-card-title">
-                      {frontEndMentorItem.title}
-                    </Typography>
-                    <Typography
-                      variant="caption"
-                      className="project-card-subtitle"
-                    >
-                      {frontEndMentorItem.subtitle}
-                    </Typography>
-                    <div className="project-card-tech">
-                      {frontEndMentorItem.technology.primary === "HTML" && (
-                        <Chip
-                          label={frontEndMentorItem.technology.primary}
-                          color="success"
-                          variant="outlined"
-                        />
-                      )}
-
-                      {frontEndMentorItem.technology.secondary === "CSS" && (
-                        <Chip
-                          label={frontEndMentorItem.technology.secondary}
-                          color="success"
-                          variant="outlined"
-                        />
-                      )}
-
-                      {frontEndMentorItem.technology.tertiary ===
-                        "Javascript" && (
-                        <Chip
-                          label={frontEndMentorItem.technology.tertiary}
-                          color="success"
-                          variant="outlined"
-                        />
-                      )}
-                    </div>
-                    <div className="project-card-actions">
-                      <a href={frontEndMentorItem.liveLink}>
-                        <Button variant="contained">live link</Button>
-                      </a>
-                      <a href={frontEndMentorItem.codeLink}>
-                        <Button variant="contained">code link</Button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ProjectCard
+                items={frontEndMentorItem}
+                key={frontEndMentorItem.id}
+              />
             );
           })}
         </div>
