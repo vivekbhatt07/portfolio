@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer } from "../../Component";
+import { PageContainer, ProjectCard } from "../../Component";
 import "./NeogCampPage.scss";
 import {
   CLIOneApp,
@@ -11,7 +11,6 @@ import {
   CashApp,
   LuckyBirthdayApp,
   TriangleApp,
-  // PalindromeApp,
   StockApp,
 } from "../../Assets/Images/Neog";
 import { Typography, Button, Chip } from "@mui/material";
@@ -129,41 +128,7 @@ function NeogCampPage() {
         </Typography>
         <div className="frontend-body">
           {neogList.map((neogItem) => {
-            return (
-              <div className="project-card" key={neogItem.id}>
-                <div className="project-card-wrap">
-                  <img
-                    src={neogItem.img}
-                    alt="advice app"
-                    className="project-card-img"
-                  />
-                  <div className="project-card-content">
-                    <Typography variant="h6" className="project-card-title">
-                      {neogItem.title}
-                    </Typography>
-                    <Typography
-                      variant="caption"
-                      className="project-card-subtitle"
-                    >
-                      {neogItem.subtitle}
-                    </Typography>
-                    <div className="project-card-tech">
-                      <Chip label="HTML" color="success" variant="outlined" />
-                      <Chip label="CSS" color="success" variant="outlined" />
-                      <Chip label="JS" color="success" variant="outlined" />
-                    </div>
-                    <div className="project-card-actions">
-                      <a href={neogItem.liveLink}>
-                        <Button variant="contained">live link</Button>
-                      </a>
-                      <a href={neogItem.codeLink}>
-                        <Button variant="contained">code link</Button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
+            return <ProjectCard items={neogItem} key={neogItem.id} />;
           })}
         </div>
       </section>
