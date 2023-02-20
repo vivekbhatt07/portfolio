@@ -8,7 +8,9 @@ function BlogCard(props) {
   return (
     <article className="blogsList-card">
       <div className="blogsList-card-container">
-        <img className="blogList-card-img" src={img} alt="man with bag" />
+        <div className="blogList-card-img-wrap">
+          <img className="blogList-card-img" src={img} alt="man with bag" />
+        </div>
         <div className="blogList-card-body">
           <Typography className="blogList-card-body-head" variant="h6">
             {blogTitle}
