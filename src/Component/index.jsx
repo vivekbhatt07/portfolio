@@ -1,3 +1,4 @@
+import BlogCard from "./BlogCard";
 import Button from "./Button";
 import CardContainer from "./ProjectCard";
 import GlossyCard from "./GlossyCard";
@@ -7,6 +8,7 @@ import PageContainer from "./PageContainer";
 import ProjectCard from "./ProjectCard";
 
 export {
+  BlogCard,
   Button,
   CardContainer,
   GlossyCard,
