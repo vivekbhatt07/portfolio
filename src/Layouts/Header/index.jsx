@@ -15,7 +15,7 @@ function Header() {
             <h1 className="header-title">
               <Link to="/">vb</Link>
             </h1>
-            <Navbar />
+            <Navbar navMode={mode} />
             <Sidebar />
             <Button variant="contained" onClick={modeToggle}>
               Mode

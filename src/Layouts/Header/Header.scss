@@ -26,10 +26,12 @@
 
 .dark-header {
   background-color: var(--dark-layout-bg);
+  transition: 0.5s;
 }
 
 .light-header {
   background-color: #fff;
+  transition: 0.5s;
 }
 
 @media (min-width: 1280px) {

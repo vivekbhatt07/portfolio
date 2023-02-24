@@ -12,7 +12,6 @@
           letter-spacing: 1px;
           font-weight: var(--medium-weight);
           font-family: inherit;
-          color: var(--dark-link-color);
           position: relative;
           padding-bottom: 0.5em;
         }
@@ -31,6 +30,30 @@
 
         .nav-link-text:hover::after {
           transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}
+
+.light-nav {
+  .nav-list {
+    .nav-item {
+      .nav-link {
+        .nav-link-text {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.dark-nav {
+  .nav-list {
+    .nav-item {
+      .nav-link {
+        .nav-link-text {
+          color: var(--dark-link-color);
         }
       }
     }

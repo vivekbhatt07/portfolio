@@ -3,9 +3,9 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <nav className="nav">
+    <nav className={`nav ${props.navMode}-nav`}>
       <ul className="nav-list">
         <li className="nav-item">
           <Link to="/" className="nav-link">
