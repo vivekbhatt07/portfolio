@@ -3,7 +3,7 @@ import "./Header.scss";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 import { Link } from "react-router-dom";
-import { LayoutContainer, ThemeContextConsumer } from "../../Component";
+import { LayoutContainer } from "../../Component";
 import { Button } from "@mui/material";
 
 function Header(props) {
@@ -15,9 +15,13 @@ function Header(props) {
         </h1>
         <Navbar navMode={props.headerMode} />
         <Sidebar />
-        <Button variant="contained" onClick={props.headerModeToggle}>
-          Mode
-        </Button>
+        <button
+          className={`mode ${props.headerMode}-mode`}
+          variant="contained"
+          onClick={props.headerModeToggle}
+        >
+          <span class={`circle ${props.headerMode}-circle`}></span>
+        </button>
       </LayoutContainer>
     </header>
   );
