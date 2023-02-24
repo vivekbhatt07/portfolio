@@ -6,6 +6,7 @@ import GroupCard from "./GroupCard";
 import LayoutContainer from "./LayoutContainer";
 import PageContainer from "./PageContainer";
 import ProjectCard from "./ProjectCard";
+import { ThemeContextProvider, ThemeContextConsumer } from "./ThemeContext";
 
 export {
   BlogCard,
@@ -16,4 +17,6 @@ export {
   LayoutContainer,
   PageContainer,
   ProjectCard,
+  ThemeContextProvider,
+  ThemeContextConsumer,
 };

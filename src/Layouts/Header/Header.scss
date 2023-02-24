@@ -1,9 +1,7 @@
 .header {
   display: flex;
-  background-color: var(--dark-layout-bg);
   padding: 1.5em 0;
   justify-content: center;
-  box-shadow: rgba(255, 255, 255, 1) 0px 2px 8px 0px;
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -24,6 +22,14 @@
       }
     }
   }
+}
+
+.dark-header {
+  background-color: var(--dark-layout-bg);
+}
+
+.light-header {
+  background-color: #fff;
 }
 
 @media (min-width: 1280px) {
