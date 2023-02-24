@@ -1,6 +1,6 @@
 import { Typography, Button } from "@mui/material";
 import React from "react";
-import { PageContainer } from "../../Component";
+import { PageContainer, SectionContainer } from "../../Component";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 import {
   HeroImg,
@@ -24,7 +24,7 @@ function Tool(props) {
 function HomePage() {
   return (
     <PageContainer>
-      <section className="hero-section">
+      <SectionContainer className="hero-section">
         <div className="hero-intro">
           <Typography className="hero-head" variant="h2">
             Hi, I Am <br></br>
@@ -54,8 +54,8 @@ function HomePage() {
         <div className="hero-img">
           <img src={HeroImg} alt="hero-img" />
         </div>
-      </section>
-      <section className="tools-section">
+      </SectionContainer>
+      <SectionContainer className="tools-section">
         <Typography className="tools-head" variant="h3">
           Tools
         </Typography>
@@ -67,7 +67,7 @@ function HomePage() {
           <Tool img={FigmaLogo} />
           <Tool img={WebflowLogo} />
         </div>
-      </section>
+      </SectionContainer>
     </PageContainer>
   );
 }

@@ -1,8 +1,6 @@
 @forward "../../GlobalStyles/Variables";
 @forward "../../GlobalStyles/ResetStyle/";
 .hero-section {
-  width: 100%;
-  display: flex;
   flex-direction: column-reverse;
   gap: 3em;
   .hero-intro {
@@ -10,14 +8,12 @@
     flex-direction: column;
     .hero-head {
       text-transform: capitalize;
-      color: #fff;
       font-family: var(--primary-font);
       font-weight: var(--medium-weight);
       margin-bottom: 16px;
     }
 
     .hero-description {
-      color: #fff;
       font-family: var(--primary-font);
       margin-bottom: 32px;
     }
@@ -54,12 +50,9 @@
 }
 
 .tools-section {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   gap: 2em;
   .tools-head {
-    color: #fff;
     text-align: center;
     font-family: var(--primary-font);
   }

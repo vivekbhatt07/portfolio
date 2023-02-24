@@ -1,13 +1,17 @@
 import React from "react";
 import "./Main.scss";
-import { LayoutContainer } from "../../Component";
+import { LayoutContainer, ThemeContextConsumer } from "../../Component";
 function Main(props) {
   return (
-    <main className="main">
-      <LayoutContainer className="main-container">
-        {props.pageContent}
-      </LayoutContainer>
-    </main>
+    <ThemeContextConsumer>
+      {({ mode }) => (
+        <main className={`main ${mode}-main`}>
+          <LayoutContainer className="main-container">
+            {props.pageContent}
+          </LayoutContainer>
+        </main>
+      )}
+    </ThemeContextConsumer>
   );
 }
 
