@@ -3,9 +3,9 @@ import "./Footer.scss";
 import { LayoutContainer } from "../../Component";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 
-function Footer() {
+function Footer(props) {
   return (
-    <footer className="footer">
+    <footer className={`footer ${props.footerMode}-footer`}>
       <LayoutContainer className="footer-container">
         <nav className="footer-nav">
           <ul className="footer-nav-list">

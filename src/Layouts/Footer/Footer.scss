@@ -1,5 +1,4 @@
 .footer {
-  background-color: var(--dark-layout-bg);
   display: flex;
   justify-content: center;
   padding: 2em 0;
@@ -24,4 +23,14 @@
       }
     }
   }
+}
+
+.light-footer {
+  background: #fff;
+  transition: 0.5s;
+}
+
+.dark-footer {
+  background-color: var(--dark-layout-bg);
+  transition: 0.5s;
 }
