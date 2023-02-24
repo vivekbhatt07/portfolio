@@ -41,10 +41,10 @@
   align-items: center;
   padding: 8px;
   border-radius: 24px;
-  background-color: #bbb;
+  background-color: #581c87;
   justify-content: flex-start;
   &:hover {
-    background: #bbb;
+    background: #581c87;
   }
 }
 
@@ -65,6 +65,17 @@
   &.dark-circle {
     background-color: #fff;
     transform: translateX(39px);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      background: #581c87;
+      border-radius: 50%;
+      width: 75%;
+      height: 75%;
+      transition: 0.5s;
+    }
   }
 }
 
@@ -72,7 +83,7 @@
   &.light-circle {
     background-color: yellow;
     transform: translateX(0);
-    transform: 0.5s;
+    transition: 0.5s;
   }
 }
 
