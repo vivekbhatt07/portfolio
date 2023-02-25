@@ -4,30 +4,37 @@
   padding: 3em 0;
   gap: 2.5em;
   .project-head {
-    text-transform: capitalize;
-    font-family: var(--primary-font);
-    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
   }
   .project-body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
     .project-group {
-      .project-group-head {
-        font-family: var(--primary-font);
-        text-transform: capitalize;
-        color: #000;
-        text-align: center;
-        font-weight: 800;
-      }
+      .project-group-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        .project-group-head {
+          font-family: var(--primary-font);
+          text-transform: capitalize;
+          text-align: center;
+          font-weight: 800;
+          font-size: 16px;
+        }
 
-      .project-group-body {
-        font-family: var(--primary-font);
-        color: #000;
-        text-align: center;
-        opacity: 0.9;
-        text-align: left;
+        .project-group-body {
+          font-family: var(--primary-font);
+          text-align: center;
+          opacity: 0.9;
+          text-align: left;
+          font-size: 14px;
+        }
       }
 
       .project-group-btn {
@@ -42,8 +49,8 @@
 
 @media (min-width: 1280px) {
   .project-section {
-    padding: 3em 0;
-    gap: 2.5em;
+    padding: 0 0 3em 0;
+    gap: 3.5em;
     .project-body {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2em;

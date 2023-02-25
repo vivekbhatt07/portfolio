@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer, GroupCard } from "../../Component";
+import { PageContainer, GroupCard, SectionContainer } from "../../Component";
 import { Typography, Button } from "@mui/material";
 import "./ProjectPage.scss";
 import { Link } from "react-router-dom";
@@ -9,27 +9,27 @@ function ProjectPage() {
       id: "1",
       groupHead: "Front End Mentor",
       groupBody:
-        "Front End Mentor is platform that provides access to various designed templates. Using these templates, anyone with the knowlege of HTML, CSS and Javascript can replicate the design.",
+        "FEM is a platform that provides access to designed templates through which anyone with the knowledge of HTML, CSS and JS can replicate the design.",
       toLocation: "/Projects/FrontEndMentor",
     },
     {
       id: "2",
-      groupHead: "Neog Camp",
+      groupHead: "Neog Camp (Level Zero)",
       groupBody:
-        "Front End Mentor is platform that provides access to various designed templates. Using these templates, anyone with the knowlege of HTML, CSS and Javascript can replicate the design.",
+        "It is a FREE lecture series to get you started with web development. If you want to test whether you enjoy coding or not, levelZero is the place for you!",
       toLocation: "/Projects/NeogCamp",
     },
     {
       id: "3",
       groupHead: "Extra",
       groupBody:
-        "Front End Mentor is platform that provides access to various designed templates. Using these templates, anyone with the knowlege of HTML, CSS and Javascript can replicate the design.",
+        "Contains projects created through various courses in Scrimba like React Free Course, Responsive Css and Advance React.",
       toLocation: "/Projects/Extra",
     },
   ];
   return (
     <PageContainer>
-      <section className="project-section">
+      <SectionContainer className="project-section">
         <Typography className="project-head" variant="h3">
           Project Categories
         </Typography>
@@ -37,12 +37,14 @@ function ProjectPage() {
           {projectGroupList.map((projectGroup) => {
             return (
               <GroupCard className="project-group" key={projectGroup.id}>
-                <Typography className="project-group-head" variant="h6">
-                  {projectGroup.groupHead}
-                </Typography>
-                <Typography className="project-group-body" variant="body2">
-                  {projectGroup.groupBody}
-                </Typography>
+                <div className="project-group-content">
+                  <Typography className="project-group-head" variant="h6">
+                    {projectGroup.groupHead}
+                  </Typography>
+                  <Typography className="project-group-body" variant="body2">
+                    {projectGroup.groupBody}
+                  </Typography>
+                </div>
                 <Link to={projectGroup.toLocation}>
                   <Button className="project-group-btn" variant="contained">
                     Open
@@ -52,7 +54,7 @@ function ProjectPage() {
             );
           })}
         </div>
-      </section>
+      </SectionContainer>
     </PageContainer>
   );
 }

@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 3em;
-  padding: 4em 0;
-  width: 100%;
+  padding: 3em 0;
   .blogsList-head {
-    text-transform: capitalize;
-    font-family: var(--primary-font);
-    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
     text-align: center;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
   }
   .blogsList-body {
     display: flex;
@@ -20,6 +19,8 @@
 
 @media (min-width: 1280px) {
   .blogsList-section {
+    padding: 0 0 3em 0;
+    gap: 3.5em;
     .blogsList-body {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

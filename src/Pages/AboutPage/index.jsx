@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutPage.scss";
-import { PageContainer, GlossyCard } from "../../Component";
+import { PageContainer, GlossyCard, SectionContainer } from "../../Component";
 import { Button, Typography, Chip } from "@mui/material";
 import GitCardLogo from "../../Assets/Images/git-card-logo.svg";
 import LinkedinCardLogo from "../../Assets/Images/linked-card-logo.svg";
@@ -38,7 +38,7 @@ function AboutPage() {
 
   return (
     <PageContainer>
-      <section className="about-section">
+      <SectionContainer className="about-section">
         <Typography className="about-head" variant="h2">
           about me
         </Typography>
@@ -137,41 +137,7 @@ function AboutPage() {
             <Button className="about-me-btn">View Projects</Button>
           </GlossyCard>
         </div>
-      </section>
-      {/* <section className="social-section">
-        <Typography className="social-head" variant="h2">
-          follow me
-        </Typography>
-        <div className="social-body">
-          {socialCardList.map((socialCard) => {
-            return (
-              <article class="social-card" key={socialCard.id}>
-                <div class="social-card-container">
-                  <div class="social-card-img">
-                    <img src={socialCard.image} alt={socialCard.socialName} />
-                  </div>
-                  <div class="social-card-content">
-                    <Typography className="social-card-title" variant="h6">
-                      {socialCard.userName}
-                    </Typography>
-                    <Typography
-                      className="social-card-subtitle"
-                      variant="caption"
-                    >
-                      {socialCard.textContent}
-                    </Typography>
-                    <a className="social-card-link" href={socialCard.link}>
-                      <Button variant="contained" className="social-card-btn">
-                        Follow
-                      </Button>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section> */}
+      </SectionContainer>
     </PageContainer>
   );
 }

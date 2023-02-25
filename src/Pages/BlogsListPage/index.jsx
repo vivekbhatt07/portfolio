@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import { PageContainer, BlogCard } from "../../Component";
+import { PageContainer, BlogCard, SectionContainer } from "../../Component";
 
 import "./BlogsListPage.scss";
 import CodingJourney from "../../Assets/Images/coding-journey.svg";
@@ -32,7 +32,7 @@ function BlogsListPage() {
 
   return (
     <PageContainer>
-      <section className="blogsList-section">
+      <SectionContainer className="blogsList-section">
         <Typography variant="h2" className="blogsList-head">
           Blogs
         </Typography>
@@ -41,7 +41,7 @@ function BlogsListPage() {
             return <BlogCard items={{ ...blog }} key={blog.id} />;
           })}
         </div>
-      </section>
+      </SectionContainer>
     </PageContainer>
   );
 }

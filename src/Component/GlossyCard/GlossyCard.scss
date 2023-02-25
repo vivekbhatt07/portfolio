@@ -10,7 +10,15 @@
   align-items: flex-start;
 }
 
-.glossy-card::before {
+.light-glossy-card {
+  color: #000;
+}
+
+.dark-glossy-card {
+  color: #fff;
+}
+
+.dark-glossy-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -18,5 +26,16 @@
   bottom: 0;
   left: 0;
   background-color: #fff;
+  opacity: 0.1;
+}
+
+.light-glossy-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
   opacity: 0.1;
 }
