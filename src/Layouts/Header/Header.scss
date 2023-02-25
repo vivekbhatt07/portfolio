@@ -2,6 +2,11 @@
   display: flex;
   padding: 1.5em 0;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -32,6 +37,8 @@
 .light-header {
   background-color: #fff;
   transition: 0.5s;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .mode {

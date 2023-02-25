@@ -1,14 +1,14 @@
 // ABOUT SECTION:
 
 .about-section {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   gap: 2em;
   .about-head {
-    text-transform: capitalize;
-    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
   }
   .about-body {
     .about-me {
@@ -61,33 +61,8 @@
 }
 
 @media (min-width: 1280px) {
-  .social-section {
-    width: 100%;
-    .social-head {
-      text-transform: capitalize;
-    }
-
-    .social-body {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4em;
-      .social-card {
-        .social-card-container {
-          grid-template-columns: 0.7fr 1fr;
-          gap: 0.5em;
-          .social-card-img {
-            img {
-              max-width: 100%;
-              object-fit: cover;
-            }
-          }
-          .social-card-content {
-            .social-card-title {
-              text-transform: capitalize;
-            }
-          }
-        }
-      }
-    }
+  .about-section {
+    flex-direction: column;
+    gap: 3.5em;
   }
 }
