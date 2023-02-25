@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 import { Link } from "react-router-dom";
 import { LayoutContainer } from "../../Component";
-import { Button } from "@mui/material";
 
 function Header(props) {
+  const [header, setHeader] = useState(false);
+
+  const changeHeader = () => {
+    return window.scrollY >= 82 ? setHeader(true) : setHeader(false);
+  };
+
+  window.addEventListener("scroll", changeHeader);
   return (
-    <header className={`header ${props.headerMode}-header`}>
+    <header
+      className={`${props.headerMode}-header ${
+        header ? "header scrolled-header" : "header"
+      }`}
+    >
       <LayoutContainer className="header-container">
         <h1 className="header-title">
           <Link to="/">vb</Link>

@@ -25,34 +25,36 @@ function HomePage() {
   return (
     <PageContainer>
       <SectionContainer className="hero-section">
-        <div className="hero-intro">
-          <Typography className="hero-head" variant="h2">
-            Hi, I Am <br></br>
-            <span>Vivek Bhatt</span>
-          </Typography>
-          <Typography className="hero-description" variant="body1">
-            I am a web developer. <br></br>Currenly, learning technologies like
-            HTML, CSS, JS and React.
-          </Typography>
-          <div className="hero-actions">
-            <Button variant="contained" className="contact-btn">
-              contact me
-            </Button>
-            <div className="hero-social">
-              <a href="https://twitter.com/vivekbhatt07">
-                <Twitter />
-              </a>
-              <a href="https://www.linkedin.com/in/vivekbhatt07/">
-                <LinkedIn />
-              </a>
-              <a href="https://github.com/vivekbhatt07">
-                <GitHub />
-              </a>
+        <div className="hero-container">
+          <div className="hero-intro">
+            <Typography className="hero-head" variant="h2">
+              Hi, I Am <br></br>
+              <span>Vivek Bhatt</span>
+            </Typography>
+            <Typography className="hero-description" variant="body1">
+              I am a web developer. <br></br>Currenly, learning technologies
+              like HTML, CSS, JS and React.
+            </Typography>
+            <div className="hero-actions">
+              <Button variant="contained" className="contact-btn">
+                contact me
+              </Button>
+              <div className="hero-social">
+                <a href="https://twitter.com/vivekbhatt07">
+                  <Twitter />
+                </a>
+                <a href="https://www.linkedin.com/in/vivekbhatt07/">
+                  <LinkedIn />
+                </a>
+                <a href="https://github.com/vivekbhatt07">
+                  <GitHub />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="hero-img">
-          <img src={HeroImg} alt="hero-img" />
+          <div className="hero-img">
+            <img src={HeroImg} alt="hero-img" />
+          </div>
         </div>
       </SectionContainer>
       <SectionContainer className="tools-section">
