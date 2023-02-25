@@ -1,11 +1,10 @@
 import React from "react";
 import "./BlogCard.scss";
-import { Link } from "react-router-dom";
 import { Button, Typography } from "@mui/material";
 import { ThemeContextConsumer } from "../../Component";
 
 function BlogCard(props) {
-  const { blogTitle, blogDescription, img } = props.items;
+  const { blogTitle, blogDescription, img, link } = props.items;
   return (
     <ThemeContextConsumer>
       {({ mode }) => (
@@ -24,11 +23,11 @@ function BlogCard(props) {
               >
                 {blogDescription}
               </Typography>
-              <Link to="/Blogs/Blog">
+              <a href={link} target="_blank">
                 <Button className="blogList-card-body-btn" variant="contained">
                   read
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </article>

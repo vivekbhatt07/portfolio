@@ -1,5 +1,4 @@
 .blogsList-card {
-  // border: 5px solid transparent;
   max-width: 100%;
   transition-property: all;
   transition-duration: 0.5s;
@@ -43,12 +42,16 @@
     }
   }
   .blogsList-card-container:hover .blogList-card-img {
-    transform: scale(1.05);
+    transform: scale(1.3) rotate(-15deg);
   }
 }
 
 .light-blogsList-card {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.light-blogsList-card:hover {
+  box-shadow: #581c87 0px 5px 15px;
 }
 
 .dark-blogsList-card {

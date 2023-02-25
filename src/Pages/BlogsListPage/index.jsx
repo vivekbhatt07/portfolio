@@ -9,24 +9,18 @@ function BlogsListPage() {
   const blogList = [
     {
       id: "1",
-      blogTitle: "Coding Journey",
+      blogTitle: "== VS ===",
       blogDescription:
-        "This is a blog about how I started my coding journey...",
+        "In this blog, I will explain strict and loose equality operators in-depth...",
       img: CodingJourney,
+      link: "https://insightblog.hashnode.dev/rem-vs-em",
     },
     {
       id: "2",
-      blogTitle: "Things I Wish I Knew Earlier",
-      blogDescription:
-        "Everybody has their way of living life but not always the right way...",
+      blogTitle: "em VS rem",
+      blogDescription: "In this blog, I will explain em and rem units...",
       img: CodingJourney,
-    },
-    {
-      id: "3",
-      blogTitle: "Game Experience",
-      blogDescription:
-        "In my childhood, I generally play games on my computer that time mobile games were not that ...",
-      img: CodingJourney,
+      link: "https://insightblog.hashnode.dev/difference-between",
     },
   ];
 
