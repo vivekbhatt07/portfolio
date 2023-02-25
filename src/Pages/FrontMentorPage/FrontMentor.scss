@@ -1,12 +1,14 @@
 .frontend-section {
-  width: 100%;
   padding: 3em 0;
   display: flex;
   flex-direction: column;
   gap: 2em;
   .frontend-head {
-    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
   }
   .frontend-body {
     display: grid;

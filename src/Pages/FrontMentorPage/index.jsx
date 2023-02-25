@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import { PageContainer, ProjectCard } from "../../Component";
+import { PageContainer, ProjectCard, SectionContainer } from "../../Component";
 import "./FrontMentor.scss";
 import {
   AdviceApp,
@@ -133,9 +133,9 @@ function FrontMentorPage() {
   ];
   return (
     <PageContainer>
-      <section className="frontend-section">
+      <SectionContainer className="frontend-section">
         <Typography variant="h3" className="frontend-head">
-          Projects
+          FEM Projects
         </Typography>
         <div className="frontend-body">
           {frontEndMentorList.map((frontEndMentorItem) => {
@@ -147,7 +147,7 @@ function FrontMentorPage() {
             );
           })}
         </div>
-      </section>
+      </SectionContainer>
     </PageContainer>
   );
 }

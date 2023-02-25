@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer, ProjectCard } from "../../Component";
+import { PageContainer, ProjectCard, SectionContainer } from "../../Component";
 import "./NeogCampPage.scss";
 import {
   CLIOneApp,
@@ -122,16 +122,16 @@ function NeogCampPage() {
   ];
   return (
     <PageContainer>
-      <section className="frontend-section">
+      <SectionContainer className="frontend-section">
         <Typography variant="h3" className="frontend-head">
-          Projects
+          Neog Projects
         </Typography>
         <div className="frontend-body">
           {neogList.map((neogItem) => {
             return <ProjectCard items={neogItem} key={neogItem.id} />;
           })}
         </div>
-      </section>
+      </SectionContainer>
     </PageContainer>
   );
 }
