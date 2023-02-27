@@ -1,9 +1,9 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { PageContainer, BlogCard, SectionContainer } from "../../Component";
-
 import "./BlogsListPage.scss";
-import CodingJourney from "../../Assets/Images/coding-journey.svg";
+import BlogOne from "../../Assets/Images/Blog/BlogOne.png";
+import BlogTwo from "../../Assets/Images/Blog/BlogTwo.png";
 
 function BlogsListPage() {
   const blogList = [
@@ -12,15 +12,15 @@ function BlogsListPage() {
       blogTitle: "== VS ===",
       blogDescription:
         "In this blog, I will explain strict and loose equality operators in-depth...",
-      img: CodingJourney,
-      link: "https://insightblog.hashnode.dev/rem-vs-em",
+      img: BlogOne,
+      link: "https://insightblog.hashnode.dev/difference-between",
     },
     {
       id: "2",
       blogTitle: "em VS rem",
       blogDescription: "In this blog, I will explain em and rem units...",
-      img: CodingJourney,
-      link: "https://insightblog.hashnode.dev/difference-between",
+      img: BlogTwo,
+      link: "https://insightblog.hashnode.dev/rem-vs-em",
     },
   ];
 
