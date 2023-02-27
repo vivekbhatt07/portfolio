@@ -1,6 +1,6 @@
 import CssLogo from "./CssLogo.svg";
 import FigmaLogo from "./FigmaLogo.svg";
-import HeroImg from "./HeroImg.svg";
+import HeroImg from "./HeroImg.png";
 import HtmlLogo from "./HtmlLogo.svg";
 import JavascriptLogo from "./JavascriptLogo.svg";
 import ReactLogo from "./ReactLogo.svg";
