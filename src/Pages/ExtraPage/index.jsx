@@ -10,69 +10,59 @@ import {
   ThreeColumnApp,
 } from "../../Assets/Images/FrontEndMentor";
 import { Typography, Button, Chip } from "@mui/material";
+import JakeAndElwood from "../../Assets/Images/ExtraPage/JakeAndElwood.png";
+import LivingSimple from "../../Assets/Images/ExtraPage/LivingSimple.png";
+import BBQ from "../../Assets/Images/ExtraPage/BBQ.png";
+import DrinkWater from "../../Assets/Images/ExtraPage/DrinkWater.png";
+import Tenzie from "../../Assets/Images/ExtraPage/Tenzie.png";
 
 function ExtraPage() {
   const frontEndMentorList = [
     {
       id: "1",
-      title: "Banana Translator App",
+      title: "Jake-And-Elwood",
       subtitle:
-        "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects",
+        "A complete responsive website made to practice responsiveness using flex and grid.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: BananaTranslatorApp,
-      liveLink: "https://banana-mini-translate.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Minion-Banana-speak",
+      img: JakeAndElwood,
+      liveLink: "https://jake-elwood.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Jake-And-Elwood",
     },
     {
       id: "2",
-      title: "Article preview component",
-      subtitle:
-        "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
-      img: ArticlePreviewApp,
-      liveLink: "https://article-cards-component.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Article-Preview-Component",
+      title: "living the simple life",
+      subtitle: "This is a simple webpage for learning responsiveness.",
+      technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
+      img: LivingSimple,
+      liveLink: "https://living-simple.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Living-the-Simple-Life",
     },
     {
       id: "3",
-      title: "Testimonials grid section",
-      subtitle:
-        "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+      title: "BBQ",
+      subtitle: "This is a simple webpage for learning responsiveness.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: TestimonialGridApp,
-      liveLink: "https://grids-testimonial.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Testimonial-Grid-Section",
+      img: BBQ,
+      liveLink: "https://bbqs.netlify.app",
+      codeLink: "https://github.com/vivekbhatt07/BBQ",
     },
     {
       id: "4",
-      title: "Order summary component",
-      subtitle:
-        "A perfect project for newbies who are starting to build confidence with layouts!",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: OrderSummaryApp,
-      liveLink: "https://orders-component.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Order-Summary-Component",
+      title: "water game",
+      subtitle: "Just a water game ",
+      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
+      img: DrinkWater,
+      liveLink: "https://water-game.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/water-game",
     },
     {
       id: "5",
-      title: "3-column preview card component",
-      subtitle:
-        "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+      title: "Tenzie Game",
+      subtitle: "Tenzi is a game in which we Roll until all dice are the same.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
-      img: ThreeColumnApp,
-      liveLink: "https://tri-column-cards.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/FE-Mentor-Challenge-1",
-    },
-
-    {
-      id: "6",
-      title: "advice generator",
-      subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-      technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
-      img: AdviceApp,
-      liveLink: "https://life-advice.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      img: Tenzie,
+      liveLink: "https://play-tenzie.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Tenzie",
     },
   ];
   return (
