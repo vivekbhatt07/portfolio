@@ -38,10 +38,10 @@ function ProjectCard(props) {
           )}
         </div>
         <div className="project-card-actions">
-          <a href={liveLink}>
+          <a href={liveLink} target="_blank">
             <Button variant="contained">live link</Button>
           </a>
-          <a href={codeLink}>
+          <a href={codeLink} target="_blank">
             <Button variant="contained">code link</Button>
           </a>
         </div>

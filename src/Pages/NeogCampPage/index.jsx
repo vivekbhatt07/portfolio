@@ -20,8 +20,7 @@ function NeogCampPage() {
     {
       id: "1",
       title: "CLI quiz app (Do you know me?)",
-      subtitle:
-        "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects",
+      subtitle: "This is a quiz created to help me know who knows me better.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: CLIOneApp,
       liveLink:
@@ -32,7 +31,7 @@ function NeogCampPage() {
       id: "2",
       title: "CLI quiz app (Do you Marvel?)",
       subtitle:
-        "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
+        "This is quiz created to check if you are a marvel fan or not ? Check it out by playing...",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: CLITwoApp,
       liveLink: "https://replit.com/@VivekBhatt2/Marvel-Quiz?embed=1&output=1",
@@ -41,8 +40,7 @@ function NeogCampPage() {
     {
       id: "3",
       title: "Banana Translator App",
-      subtitle:
-        "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+      subtitle: "This app converts english to minions language",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: BananaTranslatorApp,
       liveLink: "https://banana-mini-translate.netlify.app/",
@@ -51,8 +49,7 @@ function NeogCampPage() {
     {
       id: "4",
       title: "Ferb Translator App",
-      subtitle:
-        "A perfect project for newbies who are starting to build confidence with layouts!",
+      subtitle: "This app converts text from English to Ferb Latin.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: FerbTranslatorApp,
       liveLink: "https://phineas.netlify.app/",
@@ -60,64 +57,62 @@ function NeogCampPage() {
     },
     {
       id: "5",
-      title: "3-column preview card component",
-      subtitle:
-        "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+      title: "flag identifier",
+      subtitle: "This app provides you an insight about the flags.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "" },
       img: FlagIdentifierApp,
-      liveLink: "https://tri-column-cards.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/FE-Mentor-Challenge-1",
+      liveLink: "https://flag-identify.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/FLAG-IDENTIFIER",
     },
 
     {
       id: "6",
-      title: "advice generator",
+      title: "Recommendation App",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+        "This app provides you a list of movies in various genere as a recommendation.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: RecommendationApp,
-      liveLink: "https://life-advice.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      liveLink: "https://csb-jkzldu.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Movies",
     },
     {
       id: "7",
-      title: "advice generator",
+      title: "Cash Register Manager",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+        "This helps the user to return the amount in the minimum number of notes.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: CashApp,
-      liveLink: "https://life-advice.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      liveLink: "https://cash-manage-register.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Cash-Register-Manager",
     },
     {
       id: "8",
-      title: "advice generator",
+      title: "Lucky Birthday",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+        "This app tells the user whether their birthday is lucky or not, based on their lucky number.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: LuckyBirthdayApp,
-      liveLink: "https://life-advice.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      liveLink: "https://birthdays-lucky.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Birthday-Lucky",
     },
     {
       id: "9",
-      title: "advice generator",
-      subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+      title: "fun with triangles",
+      subtitle: "This app contains series of exercises related to triangles.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: TriangleApp,
-      liveLink: "https://life-advice.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      liveLink: "https://tri-angle-fun.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Fun-With-Triangles",
     },
     {
       id: "10",
-      title: "advice generator",
+      title: "profit & loss app",
       subtitle:
-        "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+        "This app calculates the profit and loss based on current and initial stock price.",
       technology: { primary: "HTML", secondary: "CSS", tertiary: "Javascript" },
       img: StockApp,
-      liveLink: "https://life-advice.netlify.app/",
-      codeLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      liveLink: "https://profits-loss.netlify.app/",
+      codeLink: "https://github.com/vivekbhatt07/Profit-And-Loss",
     },
   ];
   return (
