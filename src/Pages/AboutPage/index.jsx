@@ -5,6 +5,7 @@ import { Button, Typography, Chip } from "@mui/material";
 import GitCardLogo from "../../Assets/Images/git-card-logo.svg";
 import LinkedinCardLogo from "../../Assets/Images/linked-card-logo.svg";
 import TwitterCardLogo from "../../Assets/Images/twitter-card-logo.svg";
+import AboutMe from "../../Assets/Images/AboutPage/AboutMe.png";
 
 function AboutPage() {
   const socialCardList = [
@@ -43,99 +44,7 @@ function AboutPage() {
           about me
         </Typography>
         <div className="about-body">
-          <GlossyCard className="about-me">
-            <Typography className="about-me-head" variant="h3">
-              Hi! I'm Vivek
-            </Typography>
-            <ul className="about-me-list">
-              <li className="about-me-item">
-                <Typography
-                  className="about-me-description"
-                  variant="subtitle1"
-                >
-                  ⭐ I'm a front-end developer from non-CS background.
-                </Typography>
-              </li>
-              <li className="about-me-item">
-                <Typography
-                  className="about-me-description"
-                  variant="subtitle1"
-                >
-                  ⭐ I have completed my graduation in B.Com in 2021.
-                </Typography>
-              </li>
-              <li className="about-me-item">
-                <Typography
-                  className="about-me-description"
-                  variant="subtitle1"
-                >
-                  ⭐ Discord moderator at Neog.
-                </Typography>
-              </li>
-              <li className="about-me-item">
-                <Typography
-                  className="about-me-description"
-                  variant="subtitle1"
-                >
-                  ⭐ My first project on webflow{" "}
-                  <a href="https://www.tealbox.digital/">tealbox.digital</a>
-                </Typography>
-              </li>
-            </ul>
-
-            <Button className="about-me-btn">my story</Button>
-          </GlossyCard>
-          <GlossyCard className="about-me">
-            <Typography className="about-me-head" variant="h5">
-              Technologies
-            </Typography>
-            <ul className="about-me-chips">
-              <li className="about-me-chip">
-                <Chip
-                  label="HTML"
-                  className="chip"
-                  sx={{ backgroundColor: "#FF4E00" }}
-                />
-              </li>
-              <li className="about-me-chip">
-                <Chip
-                  label="CSS"
-                  className="chip"
-                  sx={{ backgroundColor: "#04619F" }}
-                />
-              </li>
-              <li className="about-me-chip">
-                <Chip
-                  label="JAVASCRIPT"
-                  className="chip"
-                  sx={{ backgroundColor: "#FBB034" }}
-                />
-              </li>
-              <li className="about-me-chip">
-                <Chip
-                  label="REACT"
-                  className="chip"
-                  sx={{ backgroundColor: "#009FFD" }}
-                />
-              </li>
-              <li className="about-me-chip">
-                <Chip
-                  label="WEBFLOW"
-                  className="chip"
-                  sx={{ backgroundColor: "#28313B" }}
-                />
-              </li>
-              <li className="about-me-chip">
-                <Chip
-                  label="FIGMA"
-                  className="chip"
-                  sx={{ backgroundColor: "#f2709c" }}
-                />
-              </li>
-            </ul>
-
-            <Button className="about-me-btn">View Projects</Button>
-          </GlossyCard>
+          <img src={AboutMe} />
         </div>
       </SectionContainer>
     </PageContainer>

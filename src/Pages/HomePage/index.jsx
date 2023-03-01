@@ -1,6 +1,6 @@
-import { Typography, Button } from "@mui/material";
+import { Typography, Button, Chip } from "@mui/material";
 import React from "react";
-import { PageContainer, SectionContainer } from "../../Component";
+import { PageContainer, SectionContainer, GlossyCard } from "../../Component";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 import {
   HeroImg,
@@ -57,18 +57,64 @@ function HomePage() {
           </div>
         </div>
       </SectionContainer>
-      <SectionContainer className="tools-section">
-        <Typography className="tools-head" variant="h3">
-          Tools
-        </Typography>
-        <div className="tools-body">
-          <Tool img={HtmlLogo} />
-          <Tool img={CssLogo} />
-          <Tool img={JavascriptLogo} />
-          <Tool img={ReactLogo} />
-          <Tool img={FigmaLogo} />
-          <Tool img={WebflowLogo} />
-        </div>
+      <SectionContainer className="aboutMe-section">
+        <GlossyCard className="about-me">
+          <Typography className="about-me-head" variant="h3">
+            Hi! I'm Vivek
+          </Typography>
+          <ul className="about-me-list">
+            <li className="about-me-item">
+              <Typography className="about-me-description" variant="subtitle1">
+                ⭐ I'm a front-end developer from non-CS background.
+              </Typography>
+            </li>
+            <li className="about-me-item">
+              <Typography className="about-me-description" variant="subtitle1">
+                ⭐ I have completed my graduation in B.Com in 2021.
+              </Typography>
+            </li>
+            <li className="about-me-item">
+              <Typography className="about-me-description" variant="subtitle1">
+                ⭐ Discord moderator at Neog.
+              </Typography>
+            </li>
+            <li className="about-me-item">
+              <Typography className="about-me-description" variant="subtitle1">
+                ⭐ My first project on webflow{" "}
+                <a href="https://www.tealbox.digital/">tealbox.digital</a>
+              </Typography>
+            </li>
+          </ul>
+
+          <Button className="about-me-btn">my story</Button>
+        </GlossyCard>
+        <GlossyCard className="about-me">
+          <Typography className="about-me-head" variant="h5">
+            Technologies
+          </Typography>
+          <ul className="about-me-chips">
+            <li className="about-me-chip">
+              <img src={ReactLogo} />
+            </li>
+            <li className="about-me-chip">
+              <img src={HtmlLogo} />
+            </li>
+            <li className="about-me-chip">
+              <img src={CssLogo} />
+            </li>
+            <li className="about-me-chip">
+              <img src={JavascriptLogo} />
+            </li>
+            <li className="about-me-chip">
+              <img src={WebflowLogo} />
+            </li>
+            <li className="about-me-chip">
+              <img src={FigmaLogo} />
+            </li>
+          </ul>
+
+          <Button className="about-me-btn">View Projects</Button>
+        </GlossyCard>
       </SectionContainer>
     </PageContainer>
   );

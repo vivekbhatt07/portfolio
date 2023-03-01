@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 3em 0;
   gap: 2.5em;
+  min-height: 100vh;
   .project-head {
     text-transform: uppercase;
     font-family: var(--heading-font);

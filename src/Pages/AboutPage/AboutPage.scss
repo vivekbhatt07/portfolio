@@ -12,52 +12,6 @@
     font-weight: 700;
   }
   .about-body {
-    .about-me {
-      .about-me-head {
-        text-transform: capitalize;
-        font-family: var(--primary-font);
-        font-weight: 600;
-      }
-      .about-me-list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-        .about-me-item {
-          .about-me-description {
-            font-family: var(--primary-font);
-            font-weight: var(--regular-weight);
-            a {
-              text-decoration: none;
-              color: #6b21a8;
-              font-style: italic;
-            }
-          }
-        }
-      }
-
-      .about-me-chips {
-        width: 100%;
-        list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        gap: 16px;
-        .about-me-chip {
-          .chip {
-            font-family: var(--primary-font);
-            color: #fff;
-          }
-        }
-      }
-
-      .about-me-btn {
-        background-color: #6b21a8;
-        color: #fff;
-        text-transform: capitalize;
-        font-family: var(--primary-font);
-        font-weight: var(--regular-weight);
-      }
-    }
   }
 }
 
