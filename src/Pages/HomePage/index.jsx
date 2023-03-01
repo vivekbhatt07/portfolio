@@ -40,13 +40,16 @@ function HomePage() {
                 contact me
               </Button>
               <div className="hero-social">
-                <a href="https://twitter.com/vivekbhatt07">
+                <a href="https://twitter.com/vivekbhatt07" target="_blank">
                   <Twitter />
                 </a>
-                <a href="https://www.linkedin.com/in/vivekbhatt07/">
+                <a
+                  href="https://www.linkedin.com/in/vivekbhatt07/"
+                  target="_blank"
+                >
                   <LinkedIn />
                 </a>
-                <a href="https://github.com/vivekbhatt07">
+                <a href="https://github.com/vivekbhatt07" target="_blank">
                   <GitHub />
                 </a>
               </div>
@@ -65,23 +68,25 @@ function HomePage() {
           <ul className="about-me-list">
             <li className="about-me-item">
               <Typography className="about-me-description" variant="subtitle1">
-                ⭐ I'm a front-end developer from non-CS background.
+                ⭐ Front-end developer from non-CS background.
               </Typography>
             </li>
             <li className="about-me-item">
               <Typography className="about-me-description" variant="subtitle1">
-                ⭐ I have completed my graduation in B.Com in 2021.
+                ⭐ Completed graduation in B.Com in 2021.
               </Typography>
             </li>
             <li className="about-me-item">
               <Typography className="about-me-description" variant="subtitle1">
-                ⭐ Discord moderator at Neog.
+                ⭐ Discord moderator at Team Tanay.
               </Typography>
             </li>
             <li className="about-me-item">
               <Typography className="about-me-description" variant="subtitle1">
                 ⭐ My first project on webflow{" "}
-                <a href="https://www.tealbox.digital/">tealbox.digital</a>
+                <a href="https://www.tealbox.digital/" target="_blank">
+                  tealbox.digital
+                </a>
               </Typography>
             </li>
           </ul>
