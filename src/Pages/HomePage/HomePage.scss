@@ -115,13 +115,52 @@
     }
   }
 }
+@media (min-width: 400px) {
+  .hero-section {
+    .hero-container {
+      gap: 2em;
+      .hero-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .hero-section {
+    .hero-container {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 1fr 250px;
+      gap: 2em;
+      .hero-intro {
+        .hero-actions {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 780px) {
-  .hero-section {
+}
+
+@media (min-width: 800px) {
+  .aboutMe-section {
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 300px;
-    gap: 2em;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 1em;
+    .about-me {
+      .about-me-head {
+        font-family: var(--primary-font);
+        font-size: 24px;
+      }
+    }
   }
 }
 
