@@ -3,7 +3,11 @@
 .hero-section {
   flex-direction: column-reverse;
   gap: 3em;
+  padding-top: 8em;
   .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4em;
     .hero-intro {
       display: flex;
       flex-direction: column;
@@ -12,22 +16,26 @@
         font-family: var(--primary-font);
         font-weight: var(--medium-weight);
         margin-bottom: 16px;
+        font-size: 48px;
       }
 
       .hero-description {
         font-family: var(--primary-font);
         margin-bottom: 32px;
+        font-size: 14px;
       }
 
       .hero-actions {
         display: flex;
         gap: 3em;
         align-items: center;
+        justify-content: space-between;
         .contact-btn {
           background-color: #6b21a8;
           font-family: var(--primary-font);
           text-transform: capitalize;
           font-weight: var(--regular-weight);
+          font-size: 12px;
         }
 
         .contact-btn:hover {
@@ -59,6 +67,7 @@
       text-transform: capitalize;
       font-family: var(--primary-font);
       font-weight: 600;
+      font-size: 24px;
     }
     .about-me-list {
       list-style: none;
@@ -69,10 +78,12 @@
         .about-me-description {
           font-family: var(--primary-font);
           font-weight: var(--regular-weight);
+          font-size: 12px;
           a {
             text-decoration: none;
             color: #6b21a8;
             font-style: italic;
+            font-size: 12px;
           }
         }
       }
@@ -100,6 +111,7 @@
       text-transform: capitalize;
       font-family: var(--primary-font);
       font-weight: var(--regular-weight);
+      font-size: 12px;
     }
   }
 }
@@ -115,6 +127,7 @@
 
 @media (min-width: 1280px) {
   .hero-section {
+    padding: 0;
     min-height: 100vh;
     display: flex;
     .hero-container {

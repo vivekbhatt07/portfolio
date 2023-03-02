@@ -68,7 +68,7 @@ function HomePage() {
           <ul className="about-me-list">
             <li className="about-me-item">
               <Typography className="about-me-description" variant="subtitle1">
-                ⭐ Front-end developer from non-CS background.
+                ⭐ Front-end developer from non-CS.
               </Typography>
             </li>
             <li className="about-me-item">
