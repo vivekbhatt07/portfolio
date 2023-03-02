@@ -172,12 +172,18 @@
     .hero-container {
       display: grid;
       justify-content: space-between;
-      grid-template-columns: 1fr 300px;
+      grid-template-columns: 1fr 350px;
       gap: 2em;
       width: 100%;
       height: 100%;
       align-items: center;
       .hero-intro {
+        .hero-head {
+          font-size: 64px;
+        }
+        .hero-description {
+          font-size: 16px;
+        }
         .hero-actions {
           gap: 3em;
           align-items: center;
@@ -194,8 +200,20 @@
     gap: 1em;
     .about-me {
       .about-me-head {
-        font-family: var(--primary-font);
         font-size: 24px;
+      }
+      .about-me-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        .about-me-item {
+          .about-me-description {
+            font-size: 14px;
+            a {
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
   }
