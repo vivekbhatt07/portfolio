@@ -1,24 +1,38 @@
-.frontend-section {
-  padding: 3em 0;
+.neog-section {
+  padding: 7em 0 2em 0;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  .frontend-head {
+  .neog-head {
     text-transform: uppercase;
     font-family: var(--heading-font);
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
   }
-  .frontend-body {
+  .neog-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
   }
 }
 
+@media (min-width: 700px) {
+  .neog-section {
+    .neog-body {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+}
+
 @media (min-width: 1280px) {
-  .frontend-section {
-    padding-top: 7em;
+  .neog-section {
+    padding: 7em 0 0 0;
+    .neog-head {
+      font-size: 32px;
+    }
+    .neog-body {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
   }
 }

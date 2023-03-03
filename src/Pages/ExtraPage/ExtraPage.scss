@@ -1,22 +1,38 @@
-.frontend-section {
-  width: 100%;
+.extra-section {
   padding: 3em 0;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  .frontend-head {
-    color: #fff;
+  .extra-head {
+    text-transform: uppercase;
+    font-family: var(--heading-font);
     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
   }
-  .frontend-body {
+  .extra-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
   }
 }
 
+@media (min-width: 700px) {
+  .extra-section {
+    .extra-body {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+}
+
 @media (min-width: 1280px) {
-  .frontend-section {
-    padding-top: 7em;
+  .extra-section {
+    padding: 7em 0 0 0;
+    .extra-head {
+      font-size: 32px;
+    }
+    .extra-body {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
   }
 }

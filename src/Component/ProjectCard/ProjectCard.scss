@@ -1,34 +1,24 @@
 .project-card {
-  position: relative;
-  overflow: hidden;
   .project-card-img {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
   }
   .project-card-content {
+    height: 100%;
     border: 5px solid #6b21a8;
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 0.8em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform 1.5s;
+    background: #000;
     .project-card-title {
       color: #fff;
       text-transform: capitalize;
     }
-
     .project-card-subtitle {
       color: #fff;
       font-family: var(--primary-font);
     }
+
     .project-card-tech {
       display: flex;
       gap: 0.8em;
@@ -43,23 +33,62 @@
           font-family: var(--primary-font);
           font-weight: 400;
           background-color: #6b21a8;
+          font-size: 14px;
         }
       }
     }
   }
-  .project-card-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #000;
-    background-blend-mode: normal;
-    z-index: -10;
-  }
 }
 
-.project-card:hover .project-card-content {
-  transform: translateY(0);
+@media (min-width: 1280px) {
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    .project-card-img {
+      display: block;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .project-card-content {
+      height: unset;
+      border: 5px solid #6b21a8;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 0.8em;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateY(100%);
+      transition: transform 1.5s;
+      // .project-card-title {
+      // }
+
+      // .project-card-subtitle {
+      // }
+      // .project-card-tech {
+      // }
+
+      // .project-card-actions {
+      // }
+    }
+    .project-card-content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #000;
+      background-blend-mode: normal;
+      z-index: -10;
+    }
+  }
+
+  .project-card:hover .project-card-content {
+    transform: translateY(0);
+  }
 }

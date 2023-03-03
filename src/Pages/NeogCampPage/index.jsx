@@ -117,11 +117,11 @@ function NeogCampPage() {
   ];
   return (
     <PageContainer>
-      <SectionContainer className="frontend-section">
-        <Typography variant="h3" className="frontend-head">
+      <SectionContainer className="neog-section">
+        <Typography variant="h3" className="neog-head">
           Neog Projects
         </Typography>
-        <div className="frontend-body">
+        <div className="neog-body">
           {neogList.map((neogItem) => {
             return <ProjectCard items={neogItem} key={neogItem.id} />;
           })}

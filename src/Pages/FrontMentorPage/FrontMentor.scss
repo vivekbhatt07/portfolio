@@ -1,5 +1,5 @@
 .frontend-section {
-  padding: 3em 0;
+  padding: 7em 0 2em 0;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -7,18 +7,33 @@
     text-transform: uppercase;
     font-family: var(--heading-font);
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
   }
   .frontend-body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 700px) {
+  .frontend-section {
+    .frontend-body {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
   }
 }
 
 @media (min-width: 1280px) {
   .frontend-section {
-    padding-top: 7em;
+    padding: 7em 0 0 0;
+    .frontend-head {
+      font-size: 32px;
+    }
+    .frontend-body {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer, ProjectCard } from "../../Component";
+import { PageContainer, ProjectCard, SectionContainer } from "../../Component";
 
 import BananaTranslatorApp from "../../Assets/Images/Neog/BananaTranslatorApp.svg";
 import {
@@ -15,6 +15,7 @@ import LivingSimple from "../../Assets/Images/ExtraPage/LivingSimple.png";
 import BBQ from "../../Assets/Images/ExtraPage/BBQ.png";
 import DrinkWater from "../../Assets/Images/ExtraPage/DrinkWater.png";
 import Tenzie from "../../Assets/Images/ExtraPage/Tenzie.png";
+import "./ExtraPage.scss";
 
 function ExtraPage() {
   const frontEndMentorList = [
@@ -67,11 +68,11 @@ function ExtraPage() {
   ];
   return (
     <PageContainer>
-      <section className="frontend-section">
-        <Typography variant="h3" className="frontend-head">
+      <SectionContainer className="extra-section">
+        <Typography variant="h3" className="extra-head">
           Projects
         </Typography>
-        <div className="frontend-body">
+        <div className="extra-body">
           {frontEndMentorList.map((frontEndMentorItem) => {
             return (
               <ProjectCard
@@ -81,7 +82,7 @@ function ExtraPage() {
             );
           })}
         </div>
-      </section>
+      </SectionContainer>
     </PageContainer>
   );
 }
