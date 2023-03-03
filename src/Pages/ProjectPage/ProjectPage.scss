@@ -1,19 +1,19 @@
 .project-section {
   display: flex;
   flex-direction: column;
-  padding: 3em 0;
+  padding: 7em 0 2em 0;
   gap: 2.5em;
   min-height: 100vh;
   .project-head {
     text-transform: uppercase;
     font-family: var(--heading-font);
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
   }
   .project-body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
     .project-group {
       .project-group-content {
@@ -43,6 +43,7 @@
         background-color: #8b5cf6;
         font-family: var(--primary-font);
         color: #fff;
+        font-size: 14px;
       }
     }
   }
@@ -50,11 +51,9 @@
 
 @media (min-width: 1280px) {
   .project-section {
-    padding-top: 7em;
+    padding: 7em 0 0 0;
     gap: 3.5em;
     .project-body {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2em;
     }
   }
 }
