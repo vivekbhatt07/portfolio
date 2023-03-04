@@ -60,6 +60,16 @@
   }
 }
 
+@media (min-width: 780px) {
+  .nav {
+    display: flex;
+    width: auto;
+    .nav-list {
+      gap: 4em;
+    }
+  }
+}
+
 @media (min-width: 1280px) {
   .nav {
     display: flex;
