@@ -20,50 +20,45 @@ function Sidebar() {
       <button className="hamburger-btn" onClick={sidebarStateHandler}>
         <MenuIcon />
       </button>
-      {createPortal(
-        <div
-          className={
-            sidebarState ? "sidebar-content active" : "sidebar-content"
-          }
-        >
-          <nav className="sidebar-nav">
-            <button className="sidebar-close-btn">
-              <CloseIcon onClick={sidebarStateHandler} />
-            </button>
-            <ul className="sidebar-list">
-              <li className="sidebar-item">
-                <Link to="/" className="sidebar-link">
-                  <Typography variant="button" className="sidebar-link-text">
-                    home
-                  </Typography>
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link to="/About" className="sidebar-link">
-                  <Typography variant="button" className="sidebar-link-text">
-                    about
-                  </Typography>
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link to="/Projects" className="sidebar-link">
-                  <Typography variant="button" className="sidebar-link-text">
-                    projects
-                  </Typography>
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link to="/Blogs" className="sidebar-link">
-                  <Typography variant="button" className="sidebar-link-text">
-                    blogs
-                  </Typography>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>,
-        document.body
-      )}
+      <div
+        className={sidebarState ? "sidebar-content active" : "sidebar-content"}
+      >
+        <nav className="sidebar-nav">
+          <button className="sidebar-close-btn">
+            <CloseIcon onClick={sidebarStateHandler} />
+          </button>
+          <ul className="sidebar-list">
+            <li className="sidebar-item">
+              <Link to="/" className="sidebar-link">
+                <Typography variant="button" className="sidebar-link-text">
+                  home
+                </Typography>
+              </Link>
+            </li>
+            <li className="sidebar-item">
+              <Link to="/About" className="sidebar-link">
+                <Typography variant="button" className="sidebar-link-text">
+                  about
+                </Typography>
+              </Link>
+            </li>
+            <li className="sidebar-item">
+              <Link to="/Projects" className="sidebar-link">
+                <Typography variant="button" className="sidebar-link-text">
+                  projects
+                </Typography>
+              </Link>
+            </li>
+            <li className="sidebar-item">
+              <Link to="/Blogs" className="sidebar-link">
+                <Typography variant="button" className="sidebar-link-text">
+                  blogs
+                </Typography>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }
