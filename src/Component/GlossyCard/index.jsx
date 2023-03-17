@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./GlossyCard.scss";
-import { ThemeContextConsumer } from "../ThemeContext";
+import { ThemeContext } from "../ThemeContext";
 
 function GlossyCard(props) {
   const { children, className } = props;
+  const { mode } = useContext(ThemeContext);
   return (
-    <ThemeContextConsumer>
-      {({ mode }) => (
-        <article className={`glossy-card ${className} ${mode}-glossy-card`}>
-          {children}
-        </article>
-      )}
-    </ThemeContextConsumer>
+    <article className={`glossy-card ${className} ${mode}-glossy-card`}>
+      {children}
+    </article>
   );
 }
 

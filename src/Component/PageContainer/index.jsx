@@ -1,19 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./PageContainer.scss";
 import { Header, Main, Footer } from "../../Layouts";
-import { ThemeContextConsumer } from "../../Component";
+import { ThemeContext } from "../../Component";
 
 function PageContainer(props) {
+  const { mode, modeToggle } = useContext(ThemeContext);
   return (
-    <ThemeContextConsumer>
-      {({ mode, modeToggle }) => (
-        <div className="page-container">
-          <Header headerMode={mode} headerModeToggle={modeToggle} />
-          <Main pageContent={props.children} mainMode={mode} />
-          <Footer footerMode={mode} />
-        </div>
-      )}
-    </ThemeContextConsumer>
+    <div className="page-container">
+      <Header headerMode={mode} headerModeToggle={modeToggle} />
+      <Main pageContent={props.children} mainMode={mode} />
+      <Footer footerMode={mode} />
+    </div>
   );
 }
 

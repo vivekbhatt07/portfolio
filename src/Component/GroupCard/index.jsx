@@ -1,17 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./GroupCard.scss";
-import { ThemeContextConsumer } from "../../Component";
+import { ThemeContext } from "../../Component";
 function GroupCard(props) {
   const { children, className } = props;
-
+  const { mode } = useContext(ThemeContext);
   return (
-    <ThemeContextConsumer>
-      {({ mode }) => (
-        <article className={`group-card ${className} ${mode}-group-card`}>
-          {children}
-        </article>
-      )}
-    </ThemeContextConsumer>
+    <article className={`group-card ${className} ${mode}-group-card`}>
+      {children}
+    </article>
   );
 }
 

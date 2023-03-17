@@ -1,6 +1,6 @@
 import React from "react";
 
-const { Provider, Consumer } = React.createContext();
+const ThemeContext = React.createContext();
 
 const ThemeContextProvider = (props) => {
   const [mode, setMode] = React.useState("light");
@@ -11,10 +11,10 @@ const ThemeContextProvider = (props) => {
     });
   };
   return (
-    <Provider value={{ mode, modeToggle: modeTogglerHandler }}>
+    <ThemeContext.Provider value={{ mode, modeToggle: modeTogglerHandler }}>
       {props.children}
-    </Provider>
+    </ThemeContext.Provider>
   );
 };
 
-export { ThemeContextProvider, Consumer as ThemeContextConsumer };
+export { ThemeContextProvider, ThemeContext };

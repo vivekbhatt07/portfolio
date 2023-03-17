@@ -7,7 +7,7 @@ import LayoutContainer from "./LayoutContainer";
 import PageContainer from "./PageContainer";
 import ProjectCard from "./ProjectCard";
 import SectionContainer from "./SectionContainer";
-import { ThemeContextProvider, ThemeContextConsumer } from "./ThemeContext";
+import { ThemeContextProvider, ThemeContext } from "./ThemeContext";
 
 export {
   BlogCard,
@@ -20,5 +20,5 @@ export {
   ProjectCard,
   ThemeContextProvider,
   SectionContainer,
-  ThemeContextConsumer,
+  ThemeContext,
 };
