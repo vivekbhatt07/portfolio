@@ -1,5 +1,6 @@
-import { Typography, Button, Chip } from "@mui/material";
 import React from "react";
+import { Typography, Button, Chip } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import { PageContainer, SectionContainer, GlossyCard } from "../../Component";
 import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
 import {
@@ -22,6 +23,7 @@ function Tool(props) {
 }
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <PageContainer>
       <SectionContainer className="hero-section">
@@ -83,7 +85,7 @@ function HomePage() {
             </li>
             <li className="about-me-item">
               <Typography className="about-me-description" variant="subtitle1">
-                ⭐ My first project on webflow{" "}
+                ⭐ My first freelance project on webflow{" "}
                 <a href="https://www.tealbox.digital/" target="_blank">
                   tealbox.digital
                 </a>
@@ -118,7 +120,12 @@ function HomePage() {
             </li>
           </ul>
 
-          <Button className="about-me-btn">View Projects</Button>
+          <Button
+            className="about-me-btn"
+            onClick={() => navigate("/Projects")}
+          >
+            View Projects
+          </Button>
         </GlossyCard>
       </SectionContainer>
     </PageContainer>
