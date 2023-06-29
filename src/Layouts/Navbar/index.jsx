@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 
 function Navbar(props) {
@@ -8,32 +8,32 @@ function Navbar(props) {
     <nav className={`nav ${props.navMode}-nav`}>
       <ul className="nav-list">
         <li className="nav-item">
-          <Link to="/" className="nav-link">
+          <NavLink to="/" className="nav-link">
             <Typography variant="button" className="nav-link-text">
               home
             </Typography>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/About" className="nav-link">
+          <NavLink to="/About" className="nav-link">
             <Typography variant="button" className="nav-link-text">
               about
             </Typography>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/Projects" className="nav-link">
+          <NavLink to="/Projects" className="nav-link">
             <Typography variant="button" className="nav-link-text">
               projects
             </Typography>
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/Blogs" className="nav-link">
+          <NavLink to="/Blogs" className="nav-link">
             <Typography variant="button" className="nav-link-text">
               blogs
             </Typography>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
